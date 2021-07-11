@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       {/* Aqui empieza el jsx, no borrar el div de "App" pq sino no jala*/}
       <header className="App-header">
-        Header. Hola mundo, el erick me la pela 
+        Header. Hola mundo, el erick me la pela durisimo 
         {/* 
         <p>
           Este es nomas un parrafo
