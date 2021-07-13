@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-header {
@@ -9,7 +10,31 @@
   
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 8px;     /* Tamaño del scroll en vertical */
+  height: 8px;    /* Tamaño del scroll en horizontal */
+  display: none;  /* Ocultar scroll */
+}
 
+/* Track 
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 05px;
+}
+ 
+/* Handle 
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+/* Handle on hover 
+::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+*/
 Body{
   background-color: #282c34;
   min-height: 100vh;
@@ -19,6 +44,7 @@ Body{
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  
 }
 
 
