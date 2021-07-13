@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './css/index.css';
 import './css/Navbar.css';
+import './css/PpChat.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
