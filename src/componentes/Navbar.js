@@ -6,7 +6,7 @@ class Navbar extends React.Component{
             <div class="topnav">
                 <a class="active" href="#home">Home</a>
                 <a class="productos" href="#productos">Productos</a>
-                </div>
+            </div>
         );
     }
 }
