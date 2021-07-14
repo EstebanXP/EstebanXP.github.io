@@ -1,3 +1,10 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+}
+
 .popupWrapper{
     position: absolute;
     right: 30px;
@@ -6,6 +13,5 @@
     background: #fff;
     border-radius: 15px;
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
-    
 }
 

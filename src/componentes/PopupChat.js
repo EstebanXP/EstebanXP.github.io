@@ -17,7 +17,7 @@ class Poupup extends React.Component {
         <input type="text" id="nombre" required maxlength="30" placeholder="Nombre"/>
         <br /> 
         <select name="razones" id="razones">
-          <option value="r1">Inoformacion sobre precios</option>
+          <option value="r1">Informacion sobre precios</option>
           <option value="r2">Informacion sobre productos</option>
           <option value="r3">Sin especificar</option>
         </select>
