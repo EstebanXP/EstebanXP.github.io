@@ -1,32 +1,31 @@
 import React from "react";
 
-
 class Poupup extends React.Component {
   render() {
     return (
       <div className="popupWrapper">
-        
-        
-        
-        <body className="body">
-        Contactanos:
-        <br />        
-        
-        <input type="email" id="email" required placeholder="Correo electronico"/>
-        <br /> 
-        <input type="text" id="nombre" required maxlength="30" placeholder="Nombre"/>
-        <br /> 
-        <select name="razones" id="razones">
-          <option value="r1">Informacion sobre precios</option>
-          <option value="r2">Informacion sobre productos</option>
-          <option value="r3">Sin especificar</option>
-        </select>
-        <br />
-        <input type="text" placeholder="Añade una breve descripción"></input>
-        <br />
-        <input type="submit"></input>
-        </body>
+        <div className="head-text">Contactanos: </div>
+        <div className="chat-box">
+          <div className="desc-text">Por favor, llenar los siguientes campos</div>
+          <form action="#">
+            <div className="field">
+              <input type="text" placeholder="Nombre completo" required></input>
+            </div>
+            <br />
+            <div className="field">
+              <input type="email" placeholder="Correo electronico" required></input>
+            </div>
+            <br />
+            <div className="field textarea">
+              <textarea cols="30" rows="10" placeholder="Escribe algo..."></textarea>
+            </div>
+            <div className="field">
+              <button type="submit">Enviar</button>
+            </div>
+          </form>
+        </div>
       </div>
+        
     );
   }
 }
