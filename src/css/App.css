@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  
+  background-color: #282c34;
 }
 
 .App-header {
@@ -9,6 +9,7 @@
   flex-direction: column;
   
 }
+
 
 /* width */
 ::-webkit-scrollbar {
