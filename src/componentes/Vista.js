@@ -7,7 +7,7 @@ import VerMas from './VerMas';
 class Vista extends React.Component{
     render(){
         return(
-            <div class="Vista">
+            <div className="Vista">
                 <ImagenFondo></ImagenFondo>
                 <h3>Esta es una vista</h3>
                 <Titulos></Titulos>

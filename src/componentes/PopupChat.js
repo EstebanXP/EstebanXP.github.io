@@ -1,6 +1,11 @@
 import React from "react";
 
 class Poupup extends React.Component {
+
+  /*holaMundo=()=>{
+      alert("Hola mundo");
+  }*/
+
   render() {
     return (
       <div className="container">

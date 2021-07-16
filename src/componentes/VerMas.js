@@ -5,7 +5,7 @@ import Titulos from './Titulos';
 class VerMas extends React.Component{
     render(){
         return(
-            <div class="VerMas">
+            <div className="VerMas">
                 <button>Ver más...</button>
             </div>
         );
