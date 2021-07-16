@@ -2,14 +2,22 @@ import React from "react";
 
 class Poupup extends React.Component {
 
-  /*holaMundo=()=>{
-      alert("Hola mundo");
-  }*/
+  holaMundo=()=>{
+    const texto=document.getElementById("bChat").firstChild;
+    if(texto.firstChild.data=="Chat"){
+      texto.firstChild.data="Cerrar";
+    }else{
+      texto.firstChild.data="Chat";
+    }
+
+
+
+  }
 
   render() {
     return (
       <div className="container">
-        <button className="btn btn-info btn-chat" type="button" >Chat</button>
+        <button id="bChat" className="btn btn-info btn-chat" type="button" onClick={this.holaMundo}>Chat</button>
         <div className="chatbox" id="chatbox">
           <div className="header">
             <h2 id="header">Mensaje </h2>
