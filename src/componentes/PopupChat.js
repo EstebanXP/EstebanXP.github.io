@@ -2,16 +2,19 @@ import React from "react";
 
 class Poupup extends React.Component {
 
+  cerrarChat=()=>{
+    document.getElementById("chatbox").style.display='none';
+  }
+
   holaMundo=()=>{
-    const texto=document.getElementById("bChat").firstChild;
-    if(texto.firstChild.data=="Chat"){
-      texto.firstChild.data="Cerrar";
-    }else{
-      texto.firstChild.data="Chat";
+    const texto=document.getElementById("bChat");
+    if(texto.textContent==="Chat"){
+      document.getElementById("chatbox").style.display='block';
+      document.getElementById("bChat").textContent="Cerrar";
+    }else if(texto.textContent!=="Chat"){
+      document.getElementById("bChat").textContent="Chat";
+      this.cerrarChat();
     }
-
-
-
   }
 
   render() {
@@ -29,6 +32,7 @@ class Poupup extends React.Component {
             <button type="button" className="btn btn-outline-success">Enviar</button>
           </form> 
         </div>
+        <div>{this.cerrarChat}</div>
       </div>
         
     );
