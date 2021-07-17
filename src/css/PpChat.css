@@ -31,11 +31,11 @@
 #chatbox{
     display: none;
     border: 3px solid #f1f1f1;
-    border-radius: 20;
     position: fixed;
     bottom: 10%;
     right: 2%;
     z-index: 9;
+    border-radius: 20px;
 }
 .form-container{
     max-width: 300px;
@@ -51,6 +51,7 @@
     margin: 5px 0 22px 0;
     background: #f1f1f1;
     font-size: 15px;
+    border-radius: 20px;
 } 
 
 .form-container textarea{
@@ -62,6 +63,7 @@
     margin: 5px 0 22px 0;
     background: #f1f1f1;
     font-size: 15px;
+    border-radius: 20px;
 }
 .form-container textarea:focus{
     background: #ddd;
