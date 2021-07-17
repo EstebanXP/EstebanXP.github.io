@@ -29,7 +29,7 @@
 
 
 #chatbox{
-    display: 0;
+    display: none;
     border: 3px solid #f1f1f1;
     border-radius: 20;
     position: fixed;
