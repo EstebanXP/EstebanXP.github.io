@@ -1,11 +1,10 @@
 import React from 'react';
+import fruta from '../assets/ejemploFondo.jpg';
 
 class ImagenFondo extends React.Component{
     render(){
         return(
-            <div className="ImagenFondo">
-                <p>Esta es la imagen pero la neta aqui no se como encapsularlo pero camara</p>
-            </div>
+            <img src={fruta} alt='fruteria'></img>
         );
     }
 }

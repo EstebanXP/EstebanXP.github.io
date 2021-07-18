@@ -4,24 +4,29 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './componentes/Navbar';
 import Poupup from './componentes/PopupChat';
 import Vista from './componentes/Vista';
+import fruta from './assets/ejemploFondo.jpg';
 
 function App() {
   return (
     <div className="App">
-      
       {/* Aqui empieza el jsx, no borrar el div de "App" pq sino no jala*/}
-      <header className="App-header">
-      <Navbar></Navbar>
-        Header. Hola mundo, el erick me la pela durisimo 
-        {/* 
-        <p>
-          Este es nomas un parrafo
-          <code>No se que hace esta parte</code> 
-        </p>
-        */}
+      
+      <div style={{backgroundImage: `url(${fruta})`}}>
+        <header className="App-header">
+          
+        </header>
+        <Navbar></Navbar>
+        <p>EjemploASJDASDASDASDASDASDA <br/>oka</p>
         
-      </header>
-      <Vista></Vista>
+        <div>
+          <p>cacacacacacacacaac</p>
+        </div>
+      </div>
+      
+        
+        
+      
+      
       <body>
         Lorem ipsum dolor sit amet consectetur adipiscing elit scelerisque, felis class augue lectus pharetra aptent vitae, quisque ante molestie sociis phasellus habitasse laoreet. Taciti venenatis natoque iaculis fames pellentesque parturient class curae auctor aptent interdum blandit, mollis aliquet feugiat libero pretium eu lacinia ante integer litora vel, fringilla et laoreet ornare lacus egestas euismod inceptos vitae eros at. Eleifend rhoncus luctus torquent potenti donec class nam, velit euismod ultrices mus mollis praesent interdum, mattis phasellus orci dictum aenean fermentum.
 
