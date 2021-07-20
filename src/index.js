@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './css/index.css';
 import './css/Navbar.css';
 import './css/PpChat.css';
+import './css/ImagenFondo.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

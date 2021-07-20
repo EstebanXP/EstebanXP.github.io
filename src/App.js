@@ -1,26 +1,24 @@
 
 import './css/App.css';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './componentes/Navbar';
 import Poupup from './componentes/PopupChat';
 import Vista from './componentes/Vista';
 import fruta from './assets/ejemploFondo.jpg';
+import ImagenFondo from './componentes/ImagenFondo';
 
 function App() {
   return (
     <div className="App">
       {/* Aqui empieza el jsx, no borrar el div de "App" pq sino no jala*/}
       
-      <div style={{backgroundImage: `url(${fruta})`}}>
+      <div>
         <header className="App-header">
-          
+          <Navbar></Navbar>
+          <ImagenFondo></ImagenFondo>
         </header>
-        <Navbar></Navbar>
-        <p>EjemploASJDASDASDASDASDASDA <br/>oka</p>
         
-        <div>
-          <p>cacacacacacacacaac</p>
-        </div>
       </div>
       
         
