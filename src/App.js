@@ -1,6 +1,6 @@
 
 import './css/App.css';
-
+import './css/ImagenFondo.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './componentes/Navbar';
 import Poupup from './componentes/PopupChat';

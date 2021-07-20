@@ -1,6 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel'
 import React from 'react';
-
+import '../css/ImagenFondo.css';
 import fruta from '../assets/ejemploFondo.jpg';
 import fruta1 from '../assets/ejemploFondo1.jpg';
 import fruta2 from '../assets/ejemploFondo2.jpg';

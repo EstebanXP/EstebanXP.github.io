@@ -2,6 +2,8 @@
 .topnav {
     background-color:rgba(0, 0, 0, .2);
     overflow: hidden;
+    margin-bottom: -52px;
+    z-index: 2;
   }
   
   /* Style the links inside the navigation bar */
