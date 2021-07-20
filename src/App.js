@@ -9,6 +9,7 @@ import fruta from './assets/ejemploFondo.jpg';
 import ImagenFondo from './componentes/ImagenFondo';
 
 function App() {
+  
   return (
     <div className="App">
       {/* Aqui empieza el jsx, no borrar el div de "App" pq sino no jala*/}
@@ -20,11 +21,6 @@ function App() {
         </header>
         
       </div>
-      
-        
-        
-      
-      
       <body>
         Lorem ipsum dolor sit amet consectetur adipiscing elit scelerisque, felis class augue lectus pharetra aptent vitae, quisque ante molestie sociis phasellus habitasse laoreet. Taciti venenatis natoque iaculis fames pellentesque parturient class curae auctor aptent interdum blandit, mollis aliquet feugiat libero pretium eu lacinia ante integer litora vel, fringilla et laoreet ornare lacus egestas euismod inceptos vitae eros at. Eleifend rhoncus luctus torquent potenti donec class nam, velit euismod ultrices mus mollis praesent interdum, mattis phasellus orci dictum aenean fermentum.
 
