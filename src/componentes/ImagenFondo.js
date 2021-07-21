@@ -8,7 +8,7 @@ import fruta2 from '../assets/ejemploFondo2.jpg';
 class ImagenFondo extends React.Component{
     render(){
         return(
-            <Carousel fade class="carrousel">
+            <Carousel fade className="carrousel">
                 <Carousel.Item>
                     <img
                     className="d-block w-100"
