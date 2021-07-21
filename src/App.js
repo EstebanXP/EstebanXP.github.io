@@ -8,6 +8,8 @@ import Vista from './componentes/Vista';
 import fruta from './assets/ejemploFondo.jpg';
 import ImagenFondo from './componentes/ImagenFondo';
 import FooterPage from './componentes/Footer';
+import { Fragment } from 'react';
+import Body from './componentes/Body';
 
 function App() {
   
@@ -22,12 +24,12 @@ function App() {
         </header>
         
       </div>
-      <body>
-        Lorem ipsum dolor sit amet consectetur adipiscing elit scelerisque, felis class augue lectus pharetra aptent vitae, quisque ante molestie sociis phasellus habitasse laoreet. Taciti venenatis natoque iaculis fames pellentesque parturient class curae auctor aptent interdum blandit, mollis aliquet feugiat libero pretium eu lacinia ante integer litora vel, fringilla et laoreet ornare lacus egestas euismod inceptos vitae eros at. Eleifend rhoncus luctus torquent potenti donec class nam, velit euismod ultrices mus mollis praesent interdum, mattis phasellus orci dictum aenean fermentum.
-
-        Sagittis ligula tincidunt vehicula sociis rhoncus vel fringilla aliquet, dui etiam venenatis dictumst potenti libero congue scelerisque urna, imperdiet porta integer placerat porttitor nibh metus. Cum fames sociis metus arcu risus ante, diam habitasse feugiat bibendum facilisi eget, pretium ut nibh morbi donec. Natoque tellus egestas interdum semper nam aliquet dapibus donec, id rutrum montes nullam ridiculus facilisis diam velit, parturient venenatis odio sociosqu porttitor habitasse mi.
+      <div className="App-Body">
+        
+        <Body />
         <Poupup />
-      </body>
+        
+      </div>
       
       <FooterPage />
       {/* Aqui empieza el jsx, no borrar el div de justo abajo pq sino no jala*/}
