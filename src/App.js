@@ -31,8 +31,9 @@ function App() {
       
       <FooterPage />
       {/* Aqui empieza el jsx, no borrar el div de justo abajo pq sino no jala*/}
-
+      <Vista/>
     </div>
+    
   );
 }
 
