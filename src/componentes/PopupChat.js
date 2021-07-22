@@ -63,7 +63,7 @@ const Poupup = () => {
     } else {
       Swal.fire(
         "Uuuuups!",
-        "Tal vez deberias revisar tu direccion de correo :(",
+        "Tal vez deberías revisar tu dirección de correo :(",
         "error"
       );
     }
