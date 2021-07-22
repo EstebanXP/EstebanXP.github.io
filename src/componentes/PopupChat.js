@@ -27,29 +27,46 @@ const Poupup = () => {
     }
   };
 
+  const validarEmail = (email) => {
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+  };
+
   const enviarEmail = (e) => {
     e.preventDefault();
-    send(
-      "service_shg556m",
-      "template_0vnvgms",
-      toSend,
-      "user_vR3QsGpeKhWlUGqEAdTHq"
-    )
-      .then(() => {
-        Swal.fire(
-          "Correo enviado!",
-          "Nos contactaremos lo mas pronto posible",
-          "success"
-        );
-        handleReset();
-        cerrarChat();
-      })
-      .catch((err) => {
-        console.log("FAILED...", err);
-        Swal.fire("Uuuuups!", "Hubo un error, intentalo mas tarde :(", "error");
-        handleReset();
-        cerrarChat();
-      });
+    if (validarEmail(toSend.correo)===true) {
+      send(
+        "service_shg556m",
+        "template_0vnvgms",
+        toSend,
+        "user_vR3QsGpeKhWlUGqEAdTHq"
+      )
+        .then(() => {
+          Swal.fire(
+            "Correo enviado!",
+            "Nos contactaremos lo mas pronto posible",
+            "success"
+          );
+          handleReset();
+          cerrarChat();
+        })
+        .catch((err) => {
+          console.log("FAILED...", err);
+          Swal.fire(
+            "Uuuuups!",
+            "Hubo un error, intentalo mas tarde :(",
+            "error"
+          );
+          handleReset();
+          cerrarChat();
+        });
+    } else {
+      Swal.fire(
+        "Uuuuups!",
+        "Tal vez deberias revisar tu direccion de correo :(",
+        "error"
+      );
+    }
   };
 
   function cerrarChat() {
