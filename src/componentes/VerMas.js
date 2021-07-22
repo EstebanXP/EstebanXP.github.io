@@ -1,6 +1,6 @@
 import React from 'react';
-import ImagenFondo from './ImagenFondo';
-import Titulos from './Titulos';
+/*import ImagenFondo from './ImagenFondo';
+import Titulos from './Titulos';*/
 
 class VerMas extends React.Component{
     render(){
