@@ -5,24 +5,8 @@ import fruta from '../assets/ejemploFondo.jpg';
 import fruta1 from '../assets/ejemploFondo1.jpg';
 import fruta2 from '../assets/ejemploFondo2.jpg';
 import ebconfig from '../ebconfig'
-
+import Easybase from './Easybase';
 import { EasybaseProvider, useEasybase } from 'easybase-react';
-import { useEffect, useState } from "react";
-
-function Home() {
-    const [easybaseData, setEasybaseData] = useState([]);
-    const { db } = useEasybase();
-  
-    const mounted = async() => {
-      const ebData = await db("REACT DEMO").return().limit(10).all();
-      setEasybaseData(ebData);
-    }
-  
-    useEffect(() => {
-      mounted();
-    }, [])
-    }
-
 
 
 class ImagenFondo extends React.Component{
@@ -66,6 +50,7 @@ class ImagenFondo extends React.Component{
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
+                <Easybase></Easybase>
             </EasybaseProvider>
         );
     }

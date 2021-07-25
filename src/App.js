@@ -10,12 +10,13 @@ import ImagenFondo from "./componentes/ImagenFondo";
 import FooterPage from "./componentes/Footer";
 //import { Fragment } from "react";
 import Body from "./componentes/Body";
+import { EasybaseProvider, Auth } from 'easybase-react'
+import ebconfig from './ebconfig'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-
 
 function App() {
   return (
-    
+    <EasybaseProvider ebconfig={ebconfig}>
       <Router>
         <div className="App">
           {/* Aqui empieza el jsx, no borrar el div de "App" pq sino no jala*/}
@@ -35,6 +36,7 @@ function App() {
           <Vista />
         </div>
       </Router>
+    </EasybaseProvider>
   );
 }
 
