@@ -1,8 +1,8 @@
 import { EasybaseProvider, useEasybase } from 'easybase-react';
 import { useEffect, useState } from "react";
 import { HashRouter, Switch, Route, Link } from 'react-router-dom';
-
-export default function Easybase() {
+import "../css/productos.css";
+export default function Productos() {
     const [easybaseData, setEasybaseData] = useState([]);
     const { db } = useEasybase();
   
@@ -19,10 +19,9 @@ export default function Easybase() {
       <div style={{ display: "flex", flexWrap: "wrap" }}>
         {easybaseData.map(ele => 
           <div>
-            <a href={ele.amazon_link}><img src={ele.demo_image} /></a>
-            <h4>{ele.product_name}</h4>
-            <p>${ele.price}</p>
-            <button onClick={() => {}}>⭐ Save for later ⭐</button>
+            <img class="imgProductos" src={ele.thumbnail} />
+            <h4>{ele.titulo}</h4>
+            <p>{ele.descripcion}</p>
           </div>
         )}
       </div>

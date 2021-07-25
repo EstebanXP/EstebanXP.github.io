@@ -1,4 +1,5 @@
 import "./css/App.css";
+import "./css/productos.css";
 import "./css/ImagenFondo.css";
 import "./css/Footer.css";
 import "bootstrap/dist/css/bootstrap.min.css";
