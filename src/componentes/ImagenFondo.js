@@ -13,44 +13,46 @@ class ImagenFondo extends React.Component{
     render(){
         return(
             <EasybaseProvider ebconfig={ebconfig}>
-                <Carousel fade className="carrousel">
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src={fruta2}
-                        alt="First slide"
-                        />
-                        <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src={fruta1}
-                        alt="Second slide"
-                        />
+                <div className ="Carrusel bg-image">
+                    <Carousel fade className="carrousel">
+                        <Carousel.Item>
+                            <img
+                            className="d-block w-100 imagenCarrusel"
+                            src={fruta2}
+                            alt="First slide"
+                            />
+                            <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}></div>
+                            <Carousel.Caption>
+                            <h3>First slide label</h3>
+                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100 imagenCarrusel"
+                                src={fruta1}
+                                alt="Second slide"
+                                />
+                            <Carousel.Caption>
+                            <h3>Second slide label</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item >
+                            <img
+                                className="d-block w-100 imagenCarrusel"
+                                src={fruta}
+                                alt="Third slide"
+                                />
+                            <Carousel.Caption>
+                                    <h3>Third slide label</h3>
+                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                    </Carousel>
+                    
+                </div>
 
-                        <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src={fruta}
-                        alt="Third slide"
-                        />
-
-                        <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                </Carousel>
-                <Productos></Productos>
             </EasybaseProvider>
         );
     }

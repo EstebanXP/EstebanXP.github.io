@@ -1,0 +1,10 @@
+.Carrusel{
+    
+    
+}
+
+.imagenCarrusel{
+    height: 600px; /* height of container */
+    object-fit: cover;
+    filter: brightness(80%);
+}
