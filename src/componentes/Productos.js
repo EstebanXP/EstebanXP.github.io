@@ -2,6 +2,9 @@ import { EasybaseProvider, useEasybase } from 'easybase-react';
 import { useEffect, useState } from "react";
 import { HashRouter, Switch, Route, Link } from 'react-router-dom';
 import "../css/productos.css";
+import { Container } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
+import Col from 'react-bootstrap/Col';
 export default function Productos() {
     const [easybaseData, setEasybaseData] = useState([]);
     const { db } = useEasybase();
@@ -16,14 +19,18 @@ export default function Productos() {
     }, [])
   
     return (
-      <div style={{ display: "flex", flexWrap: "wrap" }}>
-        {easybaseData.map(ele => 
-          <div>
-            <img class="imgProductos" src={ele.thumbnail} />
-            <h4>{ele.titulo}</h4>
-            <p>{ele.descripcion}</p>
-          </div>
-        )}
-      </div>
+      <Container>
+        <Row>
+            {easybaseData.map(ele => 
+              <Col className="ContainerProductos">
+                
+                  <img class="imgProductos" src={ele.thumbnail} />
+                
+                <h4>{ele.titulo}</h4>
+                <p>{ele.descripcion}</p>
+              </Col>
+            )}
+        </Row>
+      </Container>
     )
   }

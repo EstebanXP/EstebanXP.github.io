@@ -1,3 +1,25 @@
 .imgProductos{
-    max-width: 100px;
+    
+    object-fit: cover;
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+    
+    
+    
 }
+
+.imageContainerTh{
+   
+   
+}
+
+.ContainerProductos{
+    border-radius: 20px;
+    background-color: aliceblue;
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+

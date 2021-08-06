@@ -14,6 +14,7 @@ import Body from "./componentes/Body";
 import { EasybaseProvider, Auth } from 'easybase-react'
 import ebconfig from './ebconfig'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Productos from "./componentes/Productos";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           </div>
           <div className="App-Body">
             <Body />
+            <Productos/>
             <Poupup />
           </div>
 
