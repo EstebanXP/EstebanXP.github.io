@@ -5,6 +5,7 @@ import "../css/productos.css";
 import { Container } from 'react-bootstrap';
 import { Row } from 'react-bootstrap';
 import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button'
 export default function Productos() {
     const [easybaseData, setEasybaseData] = useState([]);
     const { db } = useEasybase();
@@ -28,6 +29,7 @@ export default function Productos() {
                 
                 <h4>{ele.titulo}</h4>
                 <p>{ele.descripcion}</p>
+                <Button className="botonProductoVermas">VER MÁS...</Button>
               </Col>
             )}
         </Row>
