@@ -1,11 +1,16 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 class Navbar extends React.Component{
     render(){
         return(
             <div className="topnav">
-                <a className="active" href="#home">Home</a>
-                <a className="productos" href="#productos">Productos</a>
+                <Link to="/">
+                    <h4 className="active">Home</h4>
+                </Link>
+                <Link to="/productos">
+                    <h4 className="productos">Productos</h4>
+                </Link>
             </div>
         );
     }

@@ -16,6 +16,7 @@ import ebconfig from './ebconfig'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Productos from "./componentes/Productos";
 
+
 function App() {
   return (
     <EasybaseProvider ebconfig={ebconfig}>
@@ -30,13 +31,14 @@ function App() {
           </div>
           <div className="App-Body">
             <Body />
-            <Productos/>
+            <Switch>
+              <Route path="/productos" exact component={Productos}></Route>
+            </Switch>
             <Poupup />
+            
           </div>
-
           <FooterPage />
           {/* Aqui termina el jsx, no borrar el div de justo abajo pq sino no jala*/}
-          <Vista />
         </div>
       </Router>
     </EasybaseProvider>
