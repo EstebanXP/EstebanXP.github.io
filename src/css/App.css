@@ -1,6 +1,11 @@
 .App {
   text-align: center;
   background-color: #fff;
+  width: 100%;
+}
+
+#root{
+  width: 100%;
 }
 
 .App-header {
@@ -27,6 +32,7 @@ Body{
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+
   
 }
 

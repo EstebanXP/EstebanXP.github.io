@@ -30,7 +30,7 @@ function App() {
             </header>
           </div>
           <div className="App-Body">
-            <Body />
+            
             <Switch>
               <Route path="/productos" exact component={Productos}></Route>
             </Switch>
