@@ -2,9 +2,12 @@
     
     
 }
+.bg-image{
+    margin-top: 1.5vh;
+}
 
 .imagenCarrusel{
-    height: 600px; /* height of container */
+    height: 100vh; /* height of container */
     object-fit: cover;
     filter: brightness(80%);
 }
