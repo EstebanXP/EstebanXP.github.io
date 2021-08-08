@@ -2,6 +2,8 @@ import React from "react";
 import { useState } from "react";
 import { send } from "emailjs-com";
 import Swal from "sweetalert2";
+import Icono from '../assets/IconoChat.png';
+import IconoAbierto from '../assets/IconoAbierto.png';
 
 const Poupup = () => {
   const [toSend, setToSend] = useState({
@@ -96,7 +98,7 @@ const Poupup = () => {
         type="button"
         onClick={holaMundo}
       >
-        Chat
+        <img src={Icono} className="iconoChat" alt="my image" onClick={holaMundo} />
       </button>
       <div className="chatbox" id="chatbox">
         <div className="header">

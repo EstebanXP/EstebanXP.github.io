@@ -31,10 +31,13 @@
 .productos{
     float: right;
     
-
 }
 
 .home {
     float: left;
     color: white;
+}
+
+.h5NavBar{
+  padding-top: 10px;
 }

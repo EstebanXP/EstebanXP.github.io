@@ -10,17 +10,17 @@ class Navbar extends React.Component{
             <div className="topnav">
                 <Container>
                     <Row>
-                        <Col>
+                        <Col className="colNavBar">
                             <Link to="/">
-                                <h5 className="home">HOME</h5>
+                                <h5 className="home h5NavBar">HOME</h5>
                             </Link>
                         </Col>
-                        <Col xs={2}>
-                            <p>hola</p>
+                        <Col xs={2} sm={6} md={8} lg={9} className="colNavBar">
+                            <h5 className="h5NavBar">hola</h5>
                         </Col>
-                        <Col>
+                        <Col className="colNavBar">
                             <Link to="/productos">
-                                <h5 className="productos">PRODUCTOS</h5>
+                                <h5 className="productos h5NavBar">PRODUCTOS</h5>
                             </Link>
                         </Col>
                     </Row>
