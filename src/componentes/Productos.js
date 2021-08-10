@@ -22,7 +22,6 @@ export default function Productos() {
   
     return (
       <Container>
-        <Body />
         <Row>
             {easybaseData.map(ele => 
               <Col className="ContainerProductos">
@@ -35,6 +34,7 @@ export default function Productos() {
               </Col>
             )}
         </Row>
+        <Body />
       </Container>
     )
   }

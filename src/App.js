@@ -2,6 +2,7 @@ import "./css/App.css";
 import "./css/productos.css";
 import "./css/ImagenFondo.css";
 import "./css/Footer.css";
+import "./css/CarouselProductos.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./componentes/Navbar";
 import Poupup from "./componentes/PopupChat";
@@ -15,6 +16,7 @@ import { EasybaseProvider, Auth } from 'easybase-react'
 import ebconfig from './ebconfig'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Productos from "./componentes/Productos";
+import CarouselProductos from "./componentes/CarouselProductos";
 
 
 function App() {
@@ -37,6 +39,11 @@ function App() {
             <Poupup />
           </div>
           <FooterPage />
+          <CarouselProductos>
+            <img src="https://via.placeholder.com/1600x300" alt="placeholder" />
+            <img src="https://via.placeholder.com/1600x300" alt="placeholder" />
+            <img src="https://via.placeholder.com/1600x300" alt="placeholder" />
+          </CarouselProductos>
           {/* Aqui termina el jsx, no borrar el div de justo abajo pq sino no jala*/}
         </div>
       </Router>
