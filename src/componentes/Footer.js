@@ -13,7 +13,7 @@ const FooterPage = () => {
       <div>
         <Container fluid>
           <Row>
-              <Col xs={2} sm={2}>
+              <Col xs={2} sm={2} md={1} lg={1}>
                 <p className="leftColFoot">Productos </p> 
                 <p className="leftColFoot">Contacto</p>
               </Col>
