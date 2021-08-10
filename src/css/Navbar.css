@@ -4,7 +4,7 @@
     overflow: hidden;
     margin-bottom: -52px;
     z-index: 2;
-    
+    min-width: 362px;
   }
   
   /* Style the links inside the navigation bar */
@@ -40,4 +40,13 @@
 
 .h5NavBar{
   padding-top: 10px;
+}
+
+.iconSocialIndivNav{
+    padding-top: 10px;
+    height: 3vh;
+    max-height: 34px;
+    min-height: 30px;
+    padding-left: 2px;
+    padding-right: 2px;
 }

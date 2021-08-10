@@ -3,6 +3,10 @@ import {Link} from 'react-router-dom';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
+import Whatsapp from '../assets/Whatsapp.svg';
+import Twitter from '../assets/Twitter.svg';
+import Instagram  from '../assets/Instagram.svg';
+import Facebook from '../assets/Facebook.svg';
 
 class Navbar extends React.Component{
     render(){
@@ -15,8 +19,11 @@ class Navbar extends React.Component{
                                 <h5 className="home h5NavBar">HOME</h5>
                             </Link>
                         </Col>
-                        <Col xs={2} sm={6} md={8} lg={9} className="colNavBar">
-                            <h5 className="h5NavBar">hola</h5>
+                        <Col xs={4} sm={6} md={8} lg={9} className="colNavBar">
+                            <img className="iconSocialIndivNav" src={Whatsapp}></img>
+                            <img className="iconSocialIndivNav" src={Facebook}></img>
+                            <img className="iconSocialIndivNav" src={Twitter}></img>
+                            <img className="iconSocialIndivNav" src={Instagram}></img>
                         </Col>
                         <Col className="colNavBar">
                             <Link to="/productos">

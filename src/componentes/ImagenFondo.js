@@ -7,7 +7,7 @@ import fruta2 from '../assets/ejemploFondo2.jpg';
 import ebconfig from '../ebconfig'
 import Productos from './Productos.js';
 import { EasybaseProvider, useEasybase } from 'easybase-react';
-
+import {useLocation} from 'react-router-rom'
 
 class ImagenFondo extends React.Component{
     render(){
@@ -52,7 +52,6 @@ class ImagenFondo extends React.Component{
                     </Carousel>
                     
                 </div>
-
             </EasybaseProvider>
         );
     }
