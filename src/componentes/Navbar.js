@@ -16,7 +16,7 @@ class Navbar extends React.Component{
                     <Row>
                         <Col className="colNavBar">
                             <Link to="/">
-                                <h5 className="home h5NavBar">HOME</h5>
+                                <h5 className="home h5NavBar">LOGO</h5>
                             </Link>
                         </Col>
                         <Col xs={4} sm={6} md={8} lg={9} className="colNavBar">
