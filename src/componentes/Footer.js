@@ -21,6 +21,7 @@ const FooterPage = () => {
 
               </Col>
               <Col>
+                <h1 className="logoFooter">LOGO</h1>
               </Col>
           </Row>
         </Container>

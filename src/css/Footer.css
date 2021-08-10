@@ -31,3 +31,7 @@
   .leftColFoot{
     float: left;
   }
+
+  .logoFooter{
+    float: right;
+  }
