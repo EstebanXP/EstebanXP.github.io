@@ -90,7 +90,7 @@ function Prod(){
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
-                            className="d-block w-100 imagenCarrusel"
+                            className="d-block w-100 imagenCarruselProd"
                             src={fruta1}
                             alt="Second slide"
                             />
@@ -101,7 +101,7 @@ function Prod(){
                     </Carousel.Item>
                     <Carousel.Item >
                         <img
-                            className="d-block w-100 imagenCarrusel"
+                            className="d-block w-100 imagenCarruselProd"
                             src={fruta}
                             alt="Third slide"
                             />
