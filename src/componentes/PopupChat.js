@@ -5,10 +5,8 @@ import Swal from "sweetalert2";
 import Icono from "../assets/IconoChat.png";
 import IconoAbierto from "../assets/IconoAbierto.png";
 
-
 const Poupup = () => {
-
-  const [stateImage, setStateImage ] = useState(true);
+  const [stateImage, setStateImage] = useState(true);
 
   const [toSend, setToSend] = useState({
     correo: "",
@@ -64,8 +62,6 @@ const Poupup = () => {
             "Hubo un error, intentalo mas tarde :(",
             "error"
           );
-          handleReset();
-          cerrarChat();
         });
     } else {
       Swal.fire(
@@ -85,7 +81,7 @@ const Poupup = () => {
   }
 
   function holaMundo() {
-    if (stateImage===true) {
+    if (stateImage === true) {
       abrirChat();
       cambiarEstado();
     } else {
@@ -94,34 +90,23 @@ const Poupup = () => {
     }
   }
 
-  function cambiarEstado(){
+  function cambiarEstado() {
     handleImageClick();
-    
   }
 
   function handleImageClick() {
     setStateImage(!stateImage);
-    console.log(stateImage)
+    console.log(stateImage);
   }
-
 
   return (
     <div className="container">
-      {/* <button
-        id="bChat"
-        className="btn btn-info btn-chat"
-        type="button"
-        onClick={holaMundo}
-      >
-
-      </button>
-*/}
       <img
-        src={ stateImage ? Icono : IconoAbierto}
+        src={stateImage ? Icono : IconoAbierto}
         className="iconoChat"
         alt=""
         onClick={holaMundo}
-        ></img>
+      />
 
       <div className="chatbox" id="chatbox">
         <div className="header">

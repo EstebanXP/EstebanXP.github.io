@@ -30,7 +30,7 @@
 
 .productos{
     float: right;
-    
+  
 }
 
 .home {
@@ -49,4 +49,8 @@
     min-height: 30px;
     padding-left: 2px;
     padding-right: 2px;
+}
+
+.Whatsapp:hover{
+  border:15px solid #E9971B; 
 }

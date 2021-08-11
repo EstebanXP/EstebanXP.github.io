@@ -17,6 +17,7 @@ import ebconfig from './ebconfig'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Productos from "./componentes/Productos";
 import CarouselProductos from "./componentes/CarouselProductos";
+import Producto from "./componentes/Producto";
 
 
 function App() {
@@ -35,6 +36,10 @@ function App() {
             
             <Switch>
               <Route path="/productos" exact component={Productos}></Route>
+            </Switch>
+
+            <Switch>
+              <Route path="/producto" exact component={Producto}></Route>
             </Switch>
             <Poupup />
           </div>
