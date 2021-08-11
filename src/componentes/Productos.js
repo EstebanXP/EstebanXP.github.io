@@ -7,6 +7,7 @@ import { Container } from 'react-bootstrap';
 import { Row } from 'react-bootstrap';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button'
+import CarouselProductos from './CarouselProductos';
 export default function Productos() {
     const [easybaseData, setEasybaseData] = useState([]);
     const { db } = useEasybase();
@@ -22,18 +23,18 @@ export default function Productos() {
   
     return (
       <Container>
-        <Row>
+          <CarouselProductos show={4}>
             {easybaseData.map(ele => 
-              <Col className="ContainerProductos">
+              <div className="ContainerProductos">
                 
                   <img class="imgProductos" src={ele.thumbnail} />
                 
                 <h4>{ele.titulo}</h4>
                 <p>{ele.descripcion}</p>
                 <Button className="botonProductoVermas">VER MÁS...</Button>
-              </Col>
+              </div>
             )}
-        </Row>
+          </CarouselProductos> 
         <Body />
       </Container>
     )

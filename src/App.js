@@ -39,11 +39,6 @@ function App() {
             <Poupup />
           </div>
           <FooterPage />
-          <CarouselProductos>
-            <img src="https://via.placeholder.com/1600x300" alt="placeholder" />
-            <img src="https://via.placeholder.com/1600x300" alt="placeholder" />
-            <img src="https://via.placeholder.com/1600x300" alt="placeholder" />
-          </CarouselProductos>
           {/* Aqui termina el jsx, no borrar el div de justo abajo pq sino no jala*/}
         </div>
       </Router>

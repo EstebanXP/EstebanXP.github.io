@@ -3,11 +3,11 @@ import { useState, useEffect } from "react";
 
 
 const CarouselProductos = (props) => {
-    const {children} = props
+    const {children, show} = props
     const [currentIndex, setCurrentIndex] = useState(0)
     const [length, setLength] = useState(children.length)
     const next = () => {
-        if (currentIndex < (length - 1)) {
+        if (currentIndex < (length - show)) {
             setCurrentIndex(prevState => prevState + 1)
         }
     }
@@ -25,8 +25,8 @@ const CarouselProductos = (props) => {
         <div className="carousel-container">
             <div className="carousel-content-wrapper">
                 <div
-                    className="carousel-content"
-                    style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+                    className={`carousel-content show-${show}`}
+                    style={{ transform: `translateX(-${currentIndex * (100 / show)}%)` }}
                 >
                     {children}
                 </div>

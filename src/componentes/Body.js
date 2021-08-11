@@ -1,8 +1,13 @@
 import React, { Fragment } from "react";
+import "../css/Body.css";
 
 const Body = () => {
   return (
     <div className="Cuerpo">
+      <div className="borderBody">
+
+      </div>
+      <h1>LOREM IPSUM</h1>
       <Fragment>
         Lorem ipsum dolor sit amet consectetur adipiscing elit scelerisque,
         felis class augue lectus pharetra aptent vitae, quisque ante molestie
