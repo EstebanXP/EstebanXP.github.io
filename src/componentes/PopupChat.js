@@ -2,10 +2,14 @@ import React from "react";
 import { useState } from "react";
 import { send } from "emailjs-com";
 import Swal from "sweetalert2";
-import Icono from '../assets/IconoChat.png';
-import IconoAbierto from '../assets/IconoAbierto.png';
+import Icono from "../assets/IconoChat.png";
+import IconoAbierto from "../assets/IconoAbierto.png";
+
 
 const Poupup = () => {
+
+  const [stateImage, setStateImage ] = useState(true);
+
   const [toSend, setToSend] = useState({
     correo: "",
     subject: "",
@@ -30,13 +34,14 @@ const Poupup = () => {
   };
 
   const validarEmail = (email) => {
-    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const re =
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
   };
 
   const enviarEmail = (e) => {
     e.preventDefault();
-    if (validarEmail(toSend.correo)===true) {
+    if (validarEmail(toSend.correo) === true) {
       send(
         "service_shg556m",
         "template_0vnvgms",
@@ -72,34 +77,52 @@ const Poupup = () => {
   };
 
   function cerrarChat() {
-    document.getElementById("bChat").textContent = "Chat";
     document.getElementById("chatbox").style.display = "none";
   }
 
   function abrirChat() {
     document.getElementById("chatbox").style.display = "block";
-    document.getElementById("bChat").textContent = "Cerrar";
   }
 
   function holaMundo() {
-    const texto = document.getElementById("bChat");
-    if (texto.textContent === "Chat") {
+    if (stateImage===true) {
       abrirChat();
-    } else if (texto.textContent !== "Chat") {
+      cambiarEstado();
+    } else {
       cerrarChat();
+      cambiarEstado();
     }
   }
 
+  function cambiarEstado(){
+    handleImageClick();
+    
+  }
+
+  function handleImageClick() {
+    setStateImage(!stateImage);
+    console.log(stateImage)
+  }
+
+
   return (
     <div className="container">
-      <button
+      {/* <button
         id="bChat"
         className="btn btn-info btn-chat"
         type="button"
         onClick={holaMundo}
       >
-        <img src={Icono} className="iconoChat" alt="my image" onClick={holaMundo} />
+
       </button>
+*/}
+      <img
+        src={ stateImage ? Icono : IconoAbierto}
+        className="iconoChat"
+        alt=""
+        onClick={holaMundo}
+        ></img>
+
       <div className="chatbox" id="chatbox">
         <div className="header">
           <h2 id="header">Contactanos</h2>

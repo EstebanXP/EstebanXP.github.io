@@ -10,10 +10,12 @@
     height: 100vh; /* height of container */
     object-fit: cover;
     filter: brightness(80%);
+    
 }
 
 .imagenCarruselProd{
     height: 50vh; /* height of container */
     object-fit: cover;
     filter: brightness(80%);
+    
 }
