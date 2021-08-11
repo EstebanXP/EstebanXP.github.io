@@ -1,5 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from "react";
+import left from '../assets/left.png';
+import right from '../assets/right.png';
 
 
 const CarouselProductos = (props) => {
@@ -31,18 +33,19 @@ const CarouselProductos = (props) => {
                     {children}
                 </div>
             </div>
-            <div className="carousel-wrapper">
+            <div className="contenedorFlechas">
                 {/* You can alwas change the content of the button to other things */}
-                <button onClick={prev} className="left-arrow">
-                    &lt;
-                </button>
-                <div className="carousel-content-wrapper">
-                    { /*...*/ }
+                <div className="left-arrowCont">
+                    <img src={left} onClick={prev} className="left-arrow"></img>
                 </div>
+                    
+                    <div className="divProdFlecha"></div>
                 {/* You can alwas change the content of the button to other things */}
-                <button onClick={next} className="right-arrow">
-                    &gt;
-                </button>
+                <div className="right-arrowCont">
+                    <img src={right} onClick={next} className="right-arrow"></img>
+                </div>
+                    
+                
             </div>
         </div>
     )

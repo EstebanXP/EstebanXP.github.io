@@ -22,7 +22,10 @@ export default function Productos() {
     }, [])
   
     return (
-      <Container>
+      <Container className="ContenedorPorductosCar">
+        <div className="productosTitle">
+          <h2>PRODUCTOS</h2>
+        </div>
           <CarouselProductos show={4}>
             {easybaseData.map(ele => 
               <div className="ContainerProductos">
