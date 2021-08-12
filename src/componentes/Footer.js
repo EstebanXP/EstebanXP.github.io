@@ -26,16 +26,16 @@ const FooterPage = () => {
       </div>
       <div class="iconSocial">
         <a href="https://www.instagram.com/p/B9aUXknB9SZ/">
-          <img className="iconSocialIndiv" src={Whatsapp}></img>
+          <img className="iconSocialIndiv" src={Whatsapp} alt=""></img>
         </a>
         <a href="https://www.instagram.com/p/B9aUXknB9SZ/">
-          <img className="iconSocialIndiv" src={Facebook}></img>
+          <img className="iconSocialIndiv" src={Facebook} alt=""></img>
         </a>
         <a href="https://www.instagram.com/p/B9aUXknB9SZ/">
-          <img className="iconSocialIndiv" src={Twitter}></img>
+          <img className="iconSocialIndiv" src={Twitter} alt=""></img>
         </a>
         <a href="https://www.instagram.com/p/B9aUXknB9SZ/">
-          <img className="iconSocialIndiv" src={Instagram}></img>
+          <img className="iconSocialIndiv" src={Instagram} alt=""></img>
         </a>
       </div>
     </Container>

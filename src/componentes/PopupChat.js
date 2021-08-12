@@ -101,12 +101,16 @@ const Poupup = () => {
 
   return (
     <div className="container">
-      <img
-        src={stateImage ? Icono : IconoAbierto}
-        className="iconoChat"
-        alt=""
-        onClick={holaMundo}
-      />
+      
+      
+        <img
+          src={stateImage ? Icono : IconoAbierto}
+          className="iconoChat"
+          alt=""
+          onClick={holaMundo}
+        />
+      
+      
 
       <div className="chatbox" id="chatbox">
         <div className="header">

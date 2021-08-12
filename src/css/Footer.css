@@ -35,3 +35,7 @@
   .logoFooter{
     float: right;
   }
+
+  img.iconSocialIndiv:hover{
+    transform: scale(1.5);
+  }

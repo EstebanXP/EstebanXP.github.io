@@ -16,21 +16,41 @@ class Navbar extends React.Component {
           <Row>
             <Col className="colNavBar">
               <Link to="/">
-                <h5 className="home h5NavBar">LOGO</h5>
+                <h5 className="home h5NavBar" >LOGO</h5>
               </Link>
             </Col>
             <Col xs={4} sm={6} md={8} lg={9} className="colNavBar">
               <a href="https://www.instagram.com/p/B9aUXknB9SZ/">
-                <img className="iconSocialIndivNav" src={Whatsapp} id="Whatsapp"/>
+                <img
+                  className="iconSocialIndivNav"
+                  src={Whatsapp}
+                  id="iconoSocial"
+                  alt=""
+                />
               </a>
               <a href="https://www.instagram.com/p/B9aUXknB9SZ/">
-                <img className="iconSocialIndivNav" src={Facebook} id="Facebook"/>
+                <img
+                  className="iconSocialIndivNav"
+                  src={Facebook}
+                  id="iconoSocial"
+                  alt=""
+                />
               </a>
               <a href="https://www.instagram.com/p/B9aUXknB9SZ/">
-                <img className="iconSocialIndivNav" src={Twitter} id="Twitter"></img>
+                <img
+                  className="iconSocialIndivNav"
+                  src={Twitter}
+                  id="iconoSocial"
+                  alt=""
+                ></img>
               </a>
               <a href="https://www.instagram.com/p/B9aUXknB9SZ/">
-                <img className="iconSocialIndivNav" src={Instagram} id="Instagram"></img>
+                <img
+                  className="iconSocialIndivNav"
+                  src={Instagram}
+                  id="iconoSocial"
+                  alt=""
+                ></img>
               </a>
             </Col>
             <Col className="colNavBar">

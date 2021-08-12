@@ -42,6 +42,15 @@
   padding-top: 10px;
 }
 
+.h5NavBar a:hover{
+color: #E9971B;
+ 
+}
+
+img.iconSocialIndivNav:hover{
+  transform: scale(1.5);
+}
+
 .iconSocialIndivNav{
     padding-top: 10px;
     height: 3vh;
