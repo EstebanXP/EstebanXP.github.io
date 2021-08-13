@@ -19,7 +19,7 @@ export default function Productos() {
     }
 
     const mounted = async() => {
-      const ebData = await db("PRODUCTOS").return().limit(10).all();
+      const ebData = await db("PRODUCTOS").return().all();
       setEasybaseData(ebData);
     }
   

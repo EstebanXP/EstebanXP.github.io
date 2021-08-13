@@ -30,7 +30,7 @@
 }
 
 .carousel-content > * {
-    width: 100%;
+    width: 90%;
     flex-shrink: 0;
     flex-grow: 1;
     
@@ -39,19 +39,20 @@
 .left-arrow, .right-arrow {
     
     z-index: 1;
-    top: 50%;
-    transform: translateY(-350%);
+    margin-top: -25vh;
     width: 48px;
-    height: 48px;
+    
+    display: inline-block;
+    position: absolute;
     
 }
 
 .left-arrow {
-    left: 24px;
+    left: 34px;
 }
 
 .right-arrow {
-    right: 24px;
+    right: 34px;
 }
 /* ... */
 
@@ -73,11 +74,20 @@
 
 .contenedorFlechas{
     display: flex;
-    width: 110%;
-    margin-left: -5%;
+    width: 90%;
+    
    
 }
 
 .right-arrowCont{
     float: right;
+}
+
+img.right-arrow:hover, img.left-arrow:hover{
+    transform: scale(1.2);
+  }
+
+@media (min-width: 1024px){
+    
+    
 }

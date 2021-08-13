@@ -8,8 +8,7 @@ import ebconfig from '../ebconfig'
 import Productos from './Productos.js';
 import { EasybaseProvider, useEasybase } from 'easybase-react';
 import { useLocation } from 'react-router';
-
-
+import { useEffect, useState } from "react";
 
 function ImagenFondo(){
     const location = useLocation();
@@ -25,46 +24,36 @@ function ImagenFondo(){
 }
 
 function Home(){
+    const [easybaseData, setEasybaseData] = useState([]);
+    const { db } = useEasybase();
+
+    const mounted = async() => {
+      const ebData = await db("HOME").return().limit(10).all();
+      setEasybaseData(ebData);
+    }
+  
+    useEffect(() => {
+      mounted();
+    }, [])
+  
     return(
         <EasybaseProvider ebconfig={ebconfig}>
             <div className ="Carrusel bg-image">
                 <Carousel fade className="carrousel">
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100 imagenCarrusel"
-                        src={fruta2}
-                        alt="First slide"
-                        />
-                        <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}></div>
-                        <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100 imagenCarrusel"
-                            src={fruta1}
-                            alt="Second slide"
-                            />
-                        <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item >
-                        <img
-                            className="d-block w-100 imagenCarrusel"
-                            src={fruta}
-                            alt="Third slide"
-                            />
-                        <Carousel.Caption>
-                                <h3>Third slide label</h3>
-                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                </Carousel>
-                
+                    {easybaseData.map(ele => 
+                         <Carousel.Item>
+                         <img
+                         className="d-block w-100 imagenCarrusel"
+                         src={ele.imagen}
+                         alt="First slide"
+                         />
+                         <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}></div>
+                         <Carousel.Caption>
+                         <h3>{ele.titulo}</h3>
+                         </Carousel.Caption>
+                     </Carousel.Item>
+                    )}
+                </Carousel>    
             </div>
 
         </EasybaseProvider>
@@ -72,46 +61,36 @@ function Home(){
 }
 
 function Prod(){
+    const [easybaseData, setEasybaseData] = useState([]);
+    const { db } = useEasybase();
+
+    const mounted = async() => {
+      const ebData = await db("HOME").return().limit(10).all();
+      setEasybaseData(ebData);
+    }
+  
+    useEffect(() => {
+      mounted();
+    }, [])
+  
     return(
         <EasybaseProvider ebconfig={ebconfig}>
             <div className ="Carrusel bg-image">
                 <Carousel fade className="carrousel">
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100 imagenCarruselProd"
-                        src={fruta2}
-                        alt="First slide"
-                        />
-                        <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}></div>
-                        <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100 imagenCarruselProd"
-                            src={fruta1}
-                            alt="Second slide"
-                            />
-                        <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item >
-                        <img
-                            className="d-block w-100 imagenCarruselProd"
-                            src={fruta}
-                            alt="Third slide"
-                            />
-                        <Carousel.Caption>
-                                <h3>Third slide label</h3>
-                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                </Carousel>
-                
+                    {easybaseData.map(ele => 
+                         <Carousel.Item>
+                         <img
+                         className="d-block w-100 imagenCarruselProd"
+                         src={ele.imagen}
+                         alt="First slide"
+                         />
+                         <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}></div>
+                         <Carousel.Caption>
+                         <h3>{ele.titulo}</h3>
+                         </Carousel.Caption>
+                     </Carousel.Item>
+                    )}
+                </Carousel>    
             </div>
 
         </EasybaseProvider>

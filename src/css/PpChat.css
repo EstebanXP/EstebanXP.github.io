@@ -87,3 +87,7 @@
     min-height: 45px;
     z-index: 99;
 }
+
+img.iconoChat:hover{
+    transform: scale(1.2);
+  }
