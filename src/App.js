@@ -21,6 +21,8 @@ import Producto from "./componentes/Producto";
 
 
 function App() {
+  const fruta="El plátano es una fruta tropical procedente de la planta herbácea que recibe el mismo nombre o banano, perteneciente a la familia de las musáceas. Tiene forma alargada o ligeramente curvada, de 100-200 g de peso. La piel es gruesa, de color amarillo y fácil de pelar, y la pulpa es blanca o amarillenta y carnosa.";
+  const prueba="pepe";
   return (
     <EasybaseProvider ebconfig={ebconfig}>
       <Router>
@@ -39,7 +41,7 @@ function App() {
             </Switch>
 
             <Switch>
-              <Route path="/producto" exact component={Producto}><Producto name="lalalalala" pepe="ññññññ" ></Producto></Route>
+              <Route path="/producto" exact component={Producto}><Producto titulo="Platanos" descripcion={fruta} precio={15.5}></Producto></Route>
             </Switch>
             <Poupup />
           </div>
