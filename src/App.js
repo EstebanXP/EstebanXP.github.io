@@ -41,7 +41,7 @@ function App() {
             </Switch>
 
             <Switch>
-              <Route path="/producto" exact component={Producto}><Producto titulo="Platanos" descripcion={fruta} precio={15.5}></Producto></Route>
+              <Route path="/producto" exact component={Producto}></Route>
             </Switch>
             <Poupup />
           </div>

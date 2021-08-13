@@ -38,7 +38,18 @@ export default function Productos() {
                   <img className="imgProductos" src={ele.thumbnail} />
                 <h4>{ele.titulo}</h4>
                 <p>{ele.descripcion}</p>
-                <Button  className="botonProductoVermas" onClick={()=>sendData(ele)}>VER MÁS...</Button>
+                <Link to={{
+                  pathname: "/producto",
+                  state : {
+                    titulo : ele.titulo,
+                    descripcion : ele.descripcion,
+                    imagen : ele.thumbnail
+                  }
+                }}>
+                  <Button  className="botonProductoVermas" onClick={()=>sendData(ele)}>VER MÁS...</Button>
+                </Link>
+                
+
               </div>
             )}
           </CarouselProductos> 
