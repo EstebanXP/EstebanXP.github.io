@@ -1,14 +1,15 @@
-import React, { Fragment } from 'react'
+import React, { Fragment } from "react";
+import '../assets/ejemploFondo1.jpg';
 
-const Producto=()=> {
-    return (
-     
-            <div className="Body">
-                Hola mundo
-            </div>
+const Producto = (props) => {
+  return (
+    <div className="Body">
+      Hola mundo
+      <p></p>
+      {props.name}
+      {props.pepe}
+    </div>
+  );
+};
 
-        
-    )
-}
-
-export default Producto
+export default Producto;
