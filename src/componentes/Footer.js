@@ -6,8 +6,22 @@ import Whatsapp from "../assets/Whatsapp.svg";
 import Twitter from "../assets/Twitter.svg";
 import Instagram from "../assets/Instagram.svg";
 import Facebook from "../assets/Facebook.svg";
+import { useLocation } from 'react-router';
 
-const FooterPage = () => {
+function FooterPage(){
+  const location = useLocation();
+    if (location.pathname == '/'){
+        return <Elsewhere></Elsewhere> ;
+    }
+    else if(location.pathname == '/producto'){
+        return null;
+    }
+    else{
+        return <Elsewhere></Elsewhere> ;
+    }
+};
+
+function Elsewhere(){
   return (
     <Container fluid className="footer">
       <div>
@@ -40,6 +54,7 @@ const FooterPage = () => {
       </div>
     </Container>
   );
-};
+}
+
 
 export default FooterPage;

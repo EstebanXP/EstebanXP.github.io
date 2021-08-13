@@ -18,7 +18,6 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Productos from "./componentes/Productos";
 import CarouselProductos from "./componentes/CarouselProductos";
 import Producto from "./componentes/Producto";
-import fruta1 from '../assets/ejemploFondo1.jpg';
 
 
 function App() {
