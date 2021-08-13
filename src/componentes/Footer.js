@@ -24,7 +24,7 @@ const FooterPage = () => {
           </Row>
         </Container>
       </div>
-      <div class="iconSocial">
+      <div className="iconSocial">
         <a href="https://www.instagram.com/p/B9aUXknB9SZ/">
           <img className="iconSocialIndiv" src={Whatsapp} alt=""></img>
         </a>
