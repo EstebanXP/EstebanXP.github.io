@@ -39,3 +39,8 @@
 .productosTitle{
     height: 10vh;
 }
+
+.prueba{
+    display: block;
+    overflow: hidden;
+}

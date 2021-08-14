@@ -14,10 +14,6 @@ export default function Productos() {
     const [easybaseData, setEasybaseData] = useState([]);
     const { db } = useEasybase();
 
-    const sendData=(data)=>{
-      console.log("Hola mundo"+data.titulo+data.descripcion);
-    }
-
     const mounted = async() => {
       const ebData = await db("PRODUCTOS").return().all();
       setEasybaseData(ebData);
@@ -35,18 +31,19 @@ export default function Productos() {
           <CarouselProductos show={4}>
             {easybaseData.map(ele => 
               <div className="ContainerProductos">
-                  <img className="imgProductos" src={ele.thumbnail} />
+                  <img alt="" className="imgProductos" src={ele.thumbnail} />
                 <h4>{ele.titulo}</h4>
-                <p>{ele.descripcion}</p>
+                <p className="prueba">{ele.descripcion}</p>
                 <Link to={{
                   pathname: "/producto",
                   state : {
                     titulo : ele.titulo,
                     descripcion : ele.descripcion,
-                    imagen : ele.thumbnail
+                    imagen : ele.thumbnail,
+                    dCompleta: ele.desccompleta
                   }
                 }}>
-                  <Button  className="botonProductoVermas" onClick={()=>sendData(ele)}>VER MÁS...</Button>
+                  <Button  className="botonProductoVermas" >VER MÁS...</Button>
                 </Link>
                 
 

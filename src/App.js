@@ -39,15 +39,16 @@ function App() {
             <Switch>
               <Route path="/productos" exact component={Productos}></Route>
             </Switch>
-
             <Switch>
               <Route path="/producto" exact component={Producto}></Route>
             </Switch>
+            
             <Poupup />
           </div>
           <FooterPage />
           {/* Aqui termina el jsx, no borrar el div de justo abajo pq sino no jala*/}
         </div>
+        
       </Router>
     </EasybaseProvider>
   );
