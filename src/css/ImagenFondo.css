@@ -50,6 +50,7 @@ li.active{
 .captionProd h3{
     font-size: 5em !important;
     position: absolute;
+    display: block;
     margin-bottom:10%;
     top:-10vh ;
     bottom: 10vh;
