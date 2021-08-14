@@ -24,11 +24,7 @@ function ImagenFondo(){
 }
 
 function Home(){
-    const [index, setIndex] = useState(0);
-
-    const handleSelect = (selectedIndex, e) => {
-        setIndex(selectedIndex);
-    };
+    
     const [easybaseData, setEasybaseData] = useState([]);
     const { db } = useEasybase();
 
@@ -44,7 +40,7 @@ function Home(){
     return(
         <EasybaseProvider ebconfig={ebconfig}>
             <div className ="Carrusel bg-image">
-                <Carousel indicatorLabels={[1,2,3]} activeIndex={index} onSelect={handleSelect} fade prevLabel={false} nextLabel={false} className="carrousel">
+                <Carousel   fade prevLabel={false} nextLabel={false} className="carrousel">
                     {easybaseData.map(ele => 
                          <Carousel.Item>
                          <img
@@ -53,7 +49,7 @@ function Home(){
                          alt="First slide"
                          />
                          <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}></div>
-                         <Carousel.Caption>
+                         <Carousel.Caption className="captionHome">
                          <h3>{ele.titulo}</h3>
                          </Carousel.Caption>
                      </Carousel.Item>
@@ -81,7 +77,7 @@ function Prod(){
     return(
         <EasybaseProvider ebconfig={ebconfig}>
             <div className ="Carrusel bg-image">
-                <Carousel fade className="carrousel">
+                <Carousel prevLabel={false} nextLabel={false} fade className="carrousel">
                     {easybaseData.map(ele => 
                          <Carousel.Item>
                          <img
@@ -90,7 +86,7 @@ function Prod(){
                          alt="First slide"
                          />
                          <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}></div>
-                         <Carousel.Caption>
+                         <Carousel.Caption className="captionProd">
                          <h3>{ele.titulo}</h3>
                          </Carousel.Caption>
                      </Carousel.Item>
