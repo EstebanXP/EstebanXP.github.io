@@ -24,6 +24,11 @@ function ImagenFondo(){
 }
 
 function Home(){
+    const [index, setIndex] = useState(0);
+
+    const handleSelect = (selectedIndex, e) => {
+        setIndex(selectedIndex);
+    };
     const [easybaseData, setEasybaseData] = useState([]);
     const { db } = useEasybase();
 
@@ -39,7 +44,7 @@ function Home(){
     return(
         <EasybaseProvider ebconfig={ebconfig}>
             <div className ="Carrusel bg-image">
-                <Carousel fade className="carrousel">
+                <Carousel indicatorLabels={[1,2,3]} activeIndex={index} onSelect={handleSelect} fade prevLabel={false} nextLabel={false} className="carrousel">
                     {easybaseData.map(ele => 
                          <Carousel.Item>
                          <img

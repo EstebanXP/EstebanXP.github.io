@@ -19,3 +19,25 @@
     filter: brightness(80%);
     
 }
+
+.carousel-indicators{
+    z-index: 4 !important;
+    color: white;
+    bottom: 30vh !important;
+    display: flex !important;
+}
+
+.carousel-indicators li{
+    
+    height: 4px;
+    width: 74px;
+    background-color: rgb(255,255,255);
+
+}
+
+li.active{
+    color:black;
+    background-color: rgba(12, 6, 6, 0.5);;
+
+    
+}
