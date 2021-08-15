@@ -49,10 +49,23 @@
 .prueba{
     display: block;
     overflow: hidden;
+    font-family: 'CircularStd-Book';
+    
 }
 
 .Cuerpo h1{
     font-family: 'CircularStd-Black';
     font-size: 4em;
     padding-top: 5vh;
+}
+
+.TituloProductosComp{
+    font-family: 'CircularStd-Book';
+    padding-top: 2vh;
+}
+
+.botonProductoVermas{
+    font-family: 'CircularStd-Black';
+    font-size:.8em !important;
+
 }

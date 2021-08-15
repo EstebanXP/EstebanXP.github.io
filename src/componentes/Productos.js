@@ -32,7 +32,7 @@ export default function Productos() {
             {easybaseData.map(ele => 
               <div className="ContainerProductos">
                   <img alt="" className="imgProductos" src={ele.thumbnail} />
-                <h4>{ele.titulo}</h4>
+                <h4 className="TituloProductosComp">{ele.titulo}</h4>
                 <p className="prueba">{ele.descripcion}</p>
                 <Link to={{
                   pathname: "/producto",
