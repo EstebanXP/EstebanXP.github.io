@@ -32,15 +32,27 @@
     padding-top: 5vh;
     max-width: 1200px !important;
     min-width: 550px;
-    
+    padding-bottom: 5vh;
     
 }
 
 .productosTitle{
-    height: 10vh;
+    height: 15vh;
+}
+
+
+.productosTitle h2{
+    font-family: 'Kiona';
+    font-size: 2.5em;
 }
 
 .prueba{
     display: block;
     overflow: hidden;
+}
+
+.Cuerpo h1{
+    font-family: 'CircularStd-Black';
+    font-size: 4em;
+    padding-top: 5vh;
 }

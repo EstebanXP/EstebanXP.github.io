@@ -8,7 +8,7 @@ const Body = () => {
 
       </div>
       <h1>LOREM IPSUM</h1>
-      <Fragment>
+      <p className="textoBody">
         Lorem ipsum dolor sit amet consectetur adipiscing elit scelerisque,
         felis class augue lectus pharetra aptent vitae, quisque ante molestie
         sociis phasellus habitasse laoreet. Taciti venenatis natoque iaculis
@@ -25,7 +25,7 @@ const Body = () => {
         Natoque tellus egestas interdum semper nam aliquet dapibus donec, id
         rutrum montes nullam ridiculus facilisis diam velit, parturient
         venenatis odio sociosqu porttitor habitasse mi.
-      </Fragment>
+      </p>
     </div>
   );
 };
