@@ -39,16 +39,16 @@ function Elsewhere(){
         </Container>
       </div>
       <div className="iconSocial">
-        <a href="https://www.instagram.com/p/B9aUXknB9SZ/">
+        <a href="https://matias.ma/nsfw/">
           <img className="iconSocialIndiv" src={Whatsapp} alt=""></img>
         </a>
-        <a href="https://www.instagram.com/p/B9aUXknB9SZ/">
+        <a href="https://matias.ma/nsfw/">
           <img className="iconSocialIndiv" src={Facebook} alt=""></img>
         </a>
-        <a href="https://www.instagram.com/p/B9aUXknB9SZ/">
+        <a href="https://matias.ma/nsfw/">
           <img className="iconSocialIndiv" src={Twitter} alt=""></img>
         </a>
-        <a href="https://www.instagram.com/p/B9aUXknB9SZ/">
+        <a href="https://matias.ma/nsfw/">
           <img className="iconSocialIndiv" src={Instagram} alt=""></img>
         </a>
       </div>

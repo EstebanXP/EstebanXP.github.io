@@ -1,54 +1,59 @@
-.columnaDatos,.top{
+.columnaDatos,
+.top {
   color: rgb(230, 230, 230);
 }
 
-.Producto{
-    background-color:rgb(8, 15, 13)
+.Producto {
+  background-color: rgb(8, 15, 13);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.top{
-  font-family: 'Sanseriffic',sans-serif;
+.top {
+  font-family: "Kiona-Regular";
   text-align: left;
-  margin-left: 40px;
+  margin-left: 100px;
 }
 
-.miniDesc{
-  font-family: 'Noto Sans JP', sans-serif;
+.miniDesc {
+  font-family: "CircularStd-Book";
 }
 
-.titulo{
+.titulo {
+  font-family: "CircularStd-Black";
   text-align: left;
 }
 
-.imagen{
+.imagen {
   border-radius: 25px;
   padding: 5px;
-  width: 600px;
+  height: 501px;
+  width: 477px;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
 }
 
-
-.imagen:hover {
-  color: #424242;
-  -webkit-transition: all 0.3s ease-in;
-  -moz-transition: all 0.3s ease-in;
-  -ms-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
-  opacity: 1;
-  transform: scale(1.5);
-  -ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Safari and Chrome */
-}
-
-.descripcionCompleta{
+.descripcionCompleta {
   margin-left: 0px;
   margin-right: 15px;
   margin-top: 0px;
   margin-bottom: 15px;
-  text-align:justify;
-  font-family: 'Atkinson Hyperlegible', sans-serif;
+  text-align: justify;
+  font-family: "CircularStd-Book";
+  color: white;
 }
 
-.Producto{
+.Producto {
   height: 100vh;
+}
+
+.left-arrowProducto {
+  width: 35px;
+  height: 35px;
+  margin-top: -5px;
+}
+
+.left-arrowProducto:hover {
+  transform: scale(1.15);
 }

@@ -31,7 +31,8 @@ function Always(){
             </Link>
           </Col>
           <Col xs={4} sm={6} md={8} lg={9} className="colNavBar">
-            <a href="https://www.instagram.com/p/B9aUXknB9SZ/">
+            <a href="https://matias.ma/nsfw/">
+            
               <img
                 className="iconSocialIndivNav"
                 src={Whatsapp}
@@ -39,7 +40,7 @@ function Always(){
                 alt=""
               />
             </a>
-            <a href="https://www.instagram.com/p/B9aUXknB9SZ/">
+            <a href="https://matias.ma/nsfw/">
               <img
                 className="iconSocialIndivNav"
                 src={Facebook}
@@ -47,7 +48,7 @@ function Always(){
                 alt=""
               />
             </a>
-            <a href="https://www.instagram.com/p/B9aUXknB9SZ/">
+            <a href="https://matias.ma/nsfw/">
               <img
                 className="iconSocialIndivNav"
                 src={Twitter}
@@ -55,7 +56,7 @@ function Always(){
                 alt=""
               ></img>
             </a>
-            <a href="https://www.instagram.com/p/B9aUXknB9SZ/">
+            <a href="https://matias.ma/nsfw/">
               <img
                 className="iconSocialIndivNav"
                 src={Instagram}
