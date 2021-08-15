@@ -43,15 +43,19 @@ li.active{
 }
 
 .captionHome h3{
+    font-family: 'CircularStd-Black';
     font-size: 5em !important;
-    margin-bottom:40%;
+    margin: bottom 2%;
+    margin-right: 30em;
 }
 
 .captionProd h3{
+    font-family: 'CircularStd-Black';
     font-size: 5em !important;
     position: absolute;
     display: block;
     margin-bottom:10%;
-    top:-10vh ;
-    bottom: 10vh;
+    
+    bottom: 10;
 }
+

@@ -43,3 +43,17 @@ Body{
   color: #61dafb;
 }
 
+@font-face {
+  font-family: 'CircularStd-Black';
+  src: local('CircularStd-Black'), url(../fonts/CircularStd-Black.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'CircularStd-Book';
+  src: local('CircularStd-Book'), url(../fonts/CircularStd-Book.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Kiona-Regular';
+  src: local('Kiona-Regular'), url(../fonts/Kiona-Regular.woff) format('woff');
+}
