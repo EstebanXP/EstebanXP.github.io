@@ -114,14 +114,14 @@ const Poupup = () => {
 
       <div className="chatbox" id="chatbox">
         <div className="header">
-          <h2 id="header">Contactanos</h2>
+          <h2 id="header" className="contactTitlePP">CONTACTO</h2>
         </div>
         <form onSubmit={enviarEmail} className="form-container" id="form">
           <input
             type="email"
             required
             placeholder="Correo electronico"
-            className="field"
+            className="field textPP"
             name="correo"
             value={toSend.correo}
             onChange={handleChange}
@@ -130,8 +130,8 @@ const Poupup = () => {
           <input
             type="text"
             required
-            placeholder="Motivo de contacto"
-            className="field"
+            placeholder="Motivo"
+            className="field textPP"
             name="subject"
             value={toSend.subject}
             onChange={handleChange}
@@ -141,21 +141,22 @@ const Poupup = () => {
             type="text"
             required
             placeholder="Nombre completo"
-            className="field"
+            className="field textPP"
             name="name"
             value={toSend.name}
             onChange={handleChange}
           ></input>
 
           <textarea
+            className="textPP"
             type="text"
-            placeholder="Escribe tus dudas"
+            placeholder="Mensaje"
             name="message"
             required
             value={toSend.message}
             onChange={handleChange}
           ></textarea>
-          <button type="submit" className="btn btn-outline-success">
+          <button type="submit" className="btn btn-outline-success botonPP">
             Enviar
           </button>
         </form>

@@ -42,17 +42,18 @@
 
 #chatbox{
     display: none;
-    border: 3px solid #f1f1f1;
+    border: 1px solid #52525248;
     position: fixed;
     bottom: 10%;
     right: 2%;
     z-index: 9;
     border-radius: 20px;
+    background-color: white;
 }
 .form-container{
     max-width: 300px;
     padding: 10px;
-    background-color: white;
+    
 }
 
 .form-container input{
@@ -60,7 +61,7 @@
     border: none;
     resize: none;
     padding: 10px;
-    margin: 5px 0 22px 0;
+    margin: 5px 0 5px 0;
     background: #f1f1f1;
     font-size: 15px;
     border-radius: 20px;
@@ -68,11 +69,11 @@
 
 .form-container textarea{
     width: 100%;
-    min-height: 200px;
+    min-height: 50px;
     border: none;
     resize: none;
     padding: 10px;
-    margin: 5px 0 22px 0;
+    margin: 5px 0 5px 0;
     background: #f1f1f1;
     font-size: 15px;
     border-radius: 20px;
@@ -91,3 +92,39 @@
 img.iconoChat:hover{
     transform: scale(1.2);
   }
+
+.textPP{
+    font-family: 'CircularStd-Book';
+}
+
+.botonPP{
+    color: #E9971B !important;
+    border-radius: 15px !important;
+    border-color: #E9971B !important;
+    font-family: 'CircularStd-Book';
+}
+
+.botonPP:hover{
+    color: white !important;
+    border-radius: 15px !important;
+    border-color: white !important;
+    background-color:  #E9971B !important;
+}
+
+.contactTitlePP{
+    font-family: 'CircularStd-Black';
+    margin-bottom: -1vh;
+    margin-top: 1vh;
+    font-size: 1.5em;
+}
+
+.swal2-styled.swal2-confirm{
+    background-color:  #E9971B !important;
+}
+
+.swal2-title{
+    font-family: 'CircularStd-Book';
+}
+.swal2-html-container {
+    font-family: 'CircularStd-Book';
+}

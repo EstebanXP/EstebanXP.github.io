@@ -30,10 +30,20 @@
 
   .leftColFoot{
     float: left;
+    font-family: 'CircularStd-Book';
+    font-size: 1.5em;
+    color: white;
+  }
+
+  .leftColFoot:hover{
+    
+    color: #E9971B;
   }
 
   .logoFooter{
     float: right;
+    font-family: 'CircularStd-Black';
+    
   }
 
   img.iconSocialIndiv:hover{

@@ -33,7 +33,9 @@ export default function Productos() {
               <div className="ContainerProductos">
                   <img alt="" className="imgProductos" src={ele.thumbnail} />
                 <h4 className="TituloProductosComp">{ele.titulo}</h4>
-                <p className="prueba">{ele.descripcion}</p>
+                <div className="pruebaContainer">
+                  <p className="prueba">{ele.descripcion}</p>
+                </div>
                 <Link to={{
                   pathname: "/producto",
                   state : {

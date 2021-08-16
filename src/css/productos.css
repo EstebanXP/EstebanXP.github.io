@@ -16,16 +16,24 @@
     padding-right: 0% !important;
     margin-left: 2%;
     margin-right: 2%;
-    max-height: 300px;
+    max-height: 250px;
     
     
     
+}
+
+.pruebaContainer{
+    max-height: 1.8em;
+    overflow: hidden;
+    padding-left: .2em;
+    padding-right: .2em;
 }
 
 .botonProductoVermas{
     border-radius: 30px !important;
     border-color: #000 !important;
     background-color: #313131 !important;
+    margin-top:1vh ;
 }
 
 .ContenedorPorductosCar{
@@ -66,6 +74,6 @@
 
 .botonProductoVermas{
     font-family: 'CircularStd-Black';
-    font-size:.8em !important;
+    font-size:.7em !important;
 
 }

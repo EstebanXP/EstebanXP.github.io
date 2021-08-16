@@ -7,6 +7,7 @@ import Twitter from "../assets/Twitter.svg";
 import Instagram from "../assets/Instagram.svg";
 import Facebook from "../assets/Facebook.svg";
 import { useLocation } from 'react-router';
+import { Link } from "react-router-dom";
 
 function FooterPage(){
   const location = useLocation();
@@ -28,8 +29,9 @@ function Elsewhere(){
         <Container fluid>
           <Row>
             <Col xs={2} sm={2} md={1} lg={1}>
-              <p className="leftColFoot">Productos </p>
-              <p className="leftColFoot">Contacto</p>
+              <Link to='/productos'>
+                <p className="leftColFoot">Productos </p>
+              </Link>
             </Col>
             <Col></Col>
             <Col>
@@ -39,16 +41,16 @@ function Elsewhere(){
         </Container>
       </div>
       <div className="iconSocial">
-        <a href="https://matias.ma/nsfw/">
+        <a href="https://www.google.com">
           <img className="iconSocialIndiv" src={Whatsapp} alt=""></img>
         </a>
-        <a href="https://matias.ma/nsfw/">
+        <a href="https://www.google.com">
           <img className="iconSocialIndiv" src={Facebook} alt=""></img>
         </a>
-        <a href="https://matias.ma/nsfw/">
+        <a href="https://www.google.com">
           <img className="iconSocialIndiv" src={Twitter} alt=""></img>
         </a>
-        <a href="https://matias.ma/nsfw/">
+        <a href="https://www.google.com">
           <img className="iconSocialIndiv" src={Instagram} alt=""></img>
         </a>
       </div>
