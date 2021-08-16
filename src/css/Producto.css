@@ -1,18 +1,17 @@
 .columnaDatos,
 .top {
   color: rgb(230, 230, 230);
+  z-index: 20;
 }
 
 .Producto {
-  background-color: rgb(8, 15, 13);
-  background-repeat: no-repeat;
-  background-size: cover;
+  
 }
 
 .top {
   font-family: "Kiona-Regular";
   text-align: left;
-  margin-left: 100px;
+  z-index: 20;
 }
 
 .miniDesc {
@@ -27,11 +26,9 @@
 .imagen {
   border-radius: 25px;
   padding: 5px;
-  height: 501px;
-  width: 477px;
-  max-width: 100%;
+  
+  max-width: 80%;
   height: auto;
-  max-height: 100%;
 }
 
 .descripcionCompleta {
@@ -42,18 +39,51 @@
   text-align: justify;
   font-family: "CircularStd-Book";
   color: white;
+  z-index: 20;
 }
 
 .Producto {
   height: 100vh;
+  z-index: 20;
+  /*filter: brightness(80%);*/
 }
 
 .left-arrowProducto {
-  width: 35px;
-  height: 35px;
-  margin-top: -5px;
+  width: 3em;
 }
 
 .left-arrowProducto:hover {
   transform: scale(1.15);
+}
+
+.backgroundImagenProd{
+  width: 100vw;
+  height: 100vh;
+  z-index:0 ;
+  position: absolute;
+  object-fit: cover;
+  filter: brightness(40%) !important;
+  filter: blur(8px);
+  left: -5px;
+
+}
+
+.columnaImagen{
+  z-index: 20;
+}
+
+.algoBien{
+  position: absolute;
+  z-index: 20;
+  width: 100vw;
+  display: flex;
+  top: 2vh;
+  left: calc(5vw + 10px);
+}
+
+.ColumnasProd{
+  top: max(15vh, 60px);
+  position: absolute;
+  right: 10px;
+  left: 10px;
 }

@@ -4,44 +4,45 @@ import { useLocation } from "react-router";
 import "../css/Producto.css";
 import Navbar from "./Navbar";
 import FooterPage from "./Footer";
-import left from "../assets/left.png";
+import left from "../assets/back.png";
 import { Link } from "react-router-dom";
 
 function Producto(props) {
   const location = useLocation();
   return (
-    <div
-      className="Producto"
-      style={{
-        backgroundImage: `url(${
-          process.env.PUBLIC_URL + location.state.imagen
-        })`,
-      }}
-    >
-      <h1 className="top">
-        {" "}
-        <Link to="/productos">
-          <img src={left} className="left-arrowProducto" alt="" />
-        </Link>
-        Producto:{" "}
-      </h1>
+    <div>
+      <img className="backgroundImagenProd" src= {location.state.imagen}></img>
       <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(2, 1fr)",
-          gridGap: 40,
-        }}
+        className="Producto"
       >
-        <div className="columnaImagen">
-          <img src={location.state.imagen} className="imagen" alt=""></img>
+        <div className="algoBien">
+          <Link to="/productos">
+            <img src={left} className="left-arrowProducto" alt="" />
+          </Link>
+          <h1 className="top">
+            Producto:
+          </h1>
         </div>
-        <div className="columnaDatos">
-          <h1 className="titulo">{location.state.titulo}</h1>
-          <p className="miniDesc">descripcion: {location.state.descripcion} </p>
-          <p className="descripcionCompleta">{location.state.dCompleta}</p>
+        
+        <div className="ColumnasProd"
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(2, 1fr)",
+            
+          }}
+        >
+          <div className="columnaImagen">
+            <img src={location.state.imagen} className="imagen" alt=""></img>
+          </div>
+          <div className="columnaDatos">
+            <h1 className="titulo">{location.state.titulo}</h1>
+            <p className="miniDesc">descripcion: {location.state.descripcion} </p>
+            <p className="descripcionCompleta">{location.state.dCompleta}</p>
+          </div>
         </div>
       </div>
     </div>
+    
   );
 }
 
