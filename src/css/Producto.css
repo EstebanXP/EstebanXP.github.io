@@ -26,9 +26,8 @@
 .imagen {
   border-radius: 25px;
   padding: 5px;
-  
-  max-width: 80%;
-  height: auto;
+  max-width: 50vw;
+  height: 80vh;
 }
 
 .descripcionCompleta {
@@ -64,7 +63,7 @@
   object-fit: cover;
   filter: brightness(40%) !important;
   filter: blur(8px);
-  left: -5px;
+  left: 0px;
 
 }
 
@@ -86,4 +85,8 @@
   position: absolute;
   right: 10px;
   left: 10px;
+}
+
+.imagen{
+  object-fit: cover;
 }
