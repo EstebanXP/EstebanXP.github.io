@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 function Producto(props) {
   const location = useLocation();
   return (
-    <div>
+    <div className="productoTotalsi">
       <img className="backgroundImagenProd" src= {location.state.imagen}></img>
       <div
         className="Producto"

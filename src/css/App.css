@@ -27,6 +27,7 @@
 
 Body{
   overflow-x: hidden;
+  overflow-y: scroll;
   background-color: #fff;
   min-height: 100vh;
   display: flex;
