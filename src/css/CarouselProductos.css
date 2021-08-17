@@ -57,11 +57,11 @@
 /* ... */
 
 .carousel-content.show-2 > * {
-    width: 50%;
+    width: calc(92% /2);
 }
 
 .carousel-content.show-3 > * {
-    width: calc(84% / 4);
+    width: calc(88% / 3);
 }
 
 .carousel-content.show-4 > * {
@@ -87,7 +87,16 @@ img.right-arrow:hover, img.left-arrow:hover{
     transform: scale(1.2);
   }
 
-@media (min-width: 1024px){
+
+
+@media only screen and (min-height: 900px) {
+    .left-arrow, .right-arrow {
     
-    
+        margin-top: -15vh;
+        
+    }
+    .productosTitle {
+        height: 10vh;
+    }
+
 }

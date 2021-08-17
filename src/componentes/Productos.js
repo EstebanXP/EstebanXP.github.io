@@ -13,16 +13,41 @@ import useWindowDimensions from './funcionVentana';
 
 export default function Productos() {
 
+    const { height, width } = useWindowDimensions();
+    //Este es el hook que agarra la altura y anchura, lo cale con la funcion dimensiones, si la necesitas 
+    //en otro componente nomas importa el useWindowDimensions y ya lo puedes jalar con los hooks tambien 
+    
+
+    var dimensiones = ()=>{
+      console.log(height + "AAAAAAA"+ width); 
+    }
+    if(width>600){
+      return(
+        <Large/>
+      )
+    }
+    else if(width<=600 && width>370){
+      return(
+        <Smol/>
+      )
+    }
+    else if(width<=370){
+      return(
+        <ExtraSmol/>
+      )
+    }
+    
+      
+    
+    
+  }
+
+  function Large(){
     const [easybaseData, setEasybaseData] = useState([]);
     const { height, width } = useWindowDimensions();
     //Este es el hook que agarra la altura y anchura, lo cale con la funcion dimensiones, si la necesitas 
     //en otro componente nomas importa el useWindowDimensions y ya lo puedes jalar con los hooks tambien 
     const { db } = useEasybase();
-
-    var dimensiones = ()=>{
-      console.log(height + "AAAAAAA"+ width); 
-    }
-
     const mounted = async() => {
       const ebData = await db("PRODUCTOS").return().all();
       setEasybaseData(ebData);
@@ -38,6 +63,102 @@ export default function Productos() {
           <h2>PRODUCTOS</h2>
         </div>
           <CarouselProductos show={4}>
+            {easybaseData.map(ele => 
+              <div className="ContainerProductos">
+                  <img alt="" className="imgProductos" src={ele.thumbnail} />
+                <h4 className="TituloProductosComp">{ele.titulo}</h4>
+                <div className="pruebaContainer">
+                  <p className="prueba">{ele.descripcion}</p>
+                </div>
+                <Link to={{
+                  pathname: "/producto",
+                  state : {
+                    titulo : ele.titulo,
+                    descripcion : ele.descripcion,
+                    imagen : ele.thumbnail,
+                    dCompleta: ele.desccompleta
+                  }
+                }}>
+                  <Button  className="botonProductoVermas" >VER MÁS...</Button>
+                </Link>
+
+              </div>
+            )}
+          </CarouselProductos> 
+        <Body />
+      </Container>
+    )
+  }
+
+  function Smol(){
+    const [easybaseData, setEasybaseData] = useState([]);
+    const { height, width } = useWindowDimensions();
+    //Este es el hook que agarra la altura y anchura, lo cale con la funcion dimensiones, si la necesitas 
+    //en otro componente nomas importa el useWindowDimensions y ya lo puedes jalar con los hooks tambien 
+    const { db } = useEasybase();
+    const mounted = async() => {
+      const ebData = await db("PRODUCTOS").return().all();
+      setEasybaseData(ebData);
+    }
+  
+    useEffect(() => {
+      mounted();
+    }, [])
+  
+    return (
+      <Container className="ContenedorPorductosCar">
+        <div className="productosTitle">
+          <h2>PRODUCTOS</h2>
+        </div>
+          <CarouselProductos show={3}>
+            {easybaseData.map(ele => 
+              <div className="ContainerProductos">
+                  <img alt="" className="imgProductos" src={ele.thumbnail} />
+                <h4 className="TituloProductosComp">{ele.titulo}</h4>
+                <div className="pruebaContainer">
+                  <p className="prueba">{ele.descripcion}</p>
+                </div>
+                <Link to={{
+                  pathname: "/producto",
+                  state : {
+                    titulo : ele.titulo,
+                    descripcion : ele.descripcion,
+                    imagen : ele.thumbnail,
+                    dCompleta: ele.desccompleta
+                  }
+                }}>
+                  <Button  className="botonProductoVermas" >VER MÁS...</Button>
+                </Link>
+
+              </div>
+            )}
+          </CarouselProductos> 
+        <Body />
+      </Container>
+    )
+  }
+
+  function ExtraSmol(){
+    const [easybaseData, setEasybaseData] = useState([]);
+    const { height, width } = useWindowDimensions();
+    //Este es el hook que agarra la altura y anchura, lo cale con la funcion dimensiones, si la necesitas 
+    //en otro componente nomas importa el useWindowDimensions y ya lo puedes jalar con los hooks tambien 
+    const { db } = useEasybase();
+    const mounted = async() => {
+      const ebData = await db("PRODUCTOS").return().all();
+      setEasybaseData(ebData);
+    }
+  
+    useEffect(() => {
+      mounted();
+    }, [])
+  
+    return (
+      <Container className="ContenedorPorductosCar">
+        <div className="productosTitle">
+          <h2>PRODUCTOS</h2>
+        </div>
+          <CarouselProductos show={2}>
             {easybaseData.map(ele => 
               <div className="ContainerProductos">
                   <img alt="" className="imgProductos" src={ele.thumbnail} />
