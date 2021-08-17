@@ -25,12 +25,12 @@ function Always(){
     <div className="topnav">
       <Container>
         <Row>
-          <Col className="colNavBar">
+          <Col  className="colNavBar">
             <Link to="/">
               <h5 className="home h5NavBar" >LOGO</h5>
             </Link>
           </Col>
-          <Col xs={4} sm={6} md={8} lg={9} className="colNavBar">
+          <Col xs={3} sm={6} md={8} lg={9} className="colNavBar">
             <a href="https://www.google.com">
               <img
                 className="iconSocialIndivNav"

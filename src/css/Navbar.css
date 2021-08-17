@@ -2,9 +2,10 @@
 .topnav {
     background-color:rgba(0, 0, 0, .2);
     overflow: hidden;
-    margin-bottom: -52px;
+    
     z-index: 2;
-    min-width: 362px;
+    position: absolute;
+    width: 100vw;
   }
   
   /* Style the links inside the navigation bar */
@@ -63,4 +64,8 @@ img.iconSocialIndivNav:hover{
 
 .Whatsapp:hover{
   border:15px solid #E9971B; 
+}
+
+.row{
+  flex-wrap:nowrap !important;
 }
