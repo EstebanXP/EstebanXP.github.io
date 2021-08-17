@@ -67,8 +67,19 @@ li.active{
 }
 
 @media (max-width: 580px) {
-    .captionProd h3{
+    
+
+    .captionHome h3{
         font-size: 8vh !important;
     }
+
+}
+
+@media (max-width: 695px) {
+    .captionProd h3{
+        font-size: 8vh !important;
+        padding-bottom: 2vh;
+    }
+
 
 }
