@@ -66,3 +66,9 @@ li.active{
     display: block;
 }
 
+@media (max-width: 580px) {
+    .captionProd h3{
+        font-size: 8vh !important;
+    }
+
+}

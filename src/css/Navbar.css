@@ -69,3 +69,27 @@ img.iconSocialIndivNav:hover{
 .row{
   flex-wrap:nowrap !important;
 }
+
+@media (max-width: 514px) {
+  .iconSocialIndivNav{
+      height: 3vw !important;
+      min-height: 25px;
+  }
+
+}
+
+@media (max-width: 250px) {
+  .iconSocialIndivNav{
+      
+      min-height: 15px;
+      padding-top: 0;
+  }
+
+}
+
+@media (max-width: 300px) {
+  .h5NavBar{
+    font-size: 1rem;
+  }
+
+}
