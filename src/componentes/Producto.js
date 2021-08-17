@@ -6,9 +6,11 @@ import Navbar from "./Navbar";
 import FooterPage from "./Footer";
 import left from "../assets/back.png";
 import { Link } from "react-router-dom";
+import useWindowDimensions from "./funcionVentana";
 
 function Producto(props) {
   const location = useLocation();
+  const { height, width } = useWindowDimensions();
   return (
     <div className="productoTotalsi">
       <img className="backgroundImagenProd" src= {location.state.imagen}></img>
@@ -38,6 +40,8 @@ function Producto(props) {
             <h1 className="titulo">{location.state.titulo}</h1>
             <p className="miniDesc">descripcion: {location.state.descripcion} </p>
             <p className="descripcionCompleta">{location.state.dCompleta}</p>
+            <p>Ancho {width}</p>
+            <p>LArgo {height}</p>
           </div>
         </div>
       </div>
