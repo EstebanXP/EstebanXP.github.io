@@ -26,13 +26,7 @@ function Producto(props) {
           </h1>
         </div>
         
-        <div className="ColumnasProd"
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(2, 1fr)",
-            
-          }}
-        >
+        <div className="ColumnasProd">
           <div className="columnaImagen">
             <img src={location.state.imagen} className="imagen" alt=""></img>
           </div>
