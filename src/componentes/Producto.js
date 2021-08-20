@@ -7,8 +7,65 @@ import FooterPage from "./Footer";
 import left from "../assets/back.png";
 import { Link } from "react-router-dom";
 import useWindowDimensions from "./funcionVentana";
+import { render } from "@testing-library/react";
 
-function Producto(props) {
+function Producto() {
+  const { height, width } = useWindowDimensions();
+  if(width<500){
+    return(
+      <ProductosSmall></ProductosSmall>
+    )
+  }else if(Math.abs(width-height)<400){
+    return(
+      <ProductosSquare/>
+    );
+  }
+  else{
+    return(
+      <ProductosBig/>
+    )
+  }
+  
+}
+
+function ProductosBig(){
+  const location = useLocation();
+  const { height, width } = useWindowDimensions();
+  return (
+    <div className="productoTotalsi">
+      <img className="backgroundImagenProd" src= {location.state.imagen}></img>
+      <div
+        className="Producto"
+      >
+        <div className="algoBien">
+          <Link to="/productos">
+            <img src={left} className="left-arrowProducto" alt="" />
+          </Link>
+          <h1 className="top">
+            Producto:
+          </h1>
+        </div>
+        
+        <div className="ColumnasProd" style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(2, 1fr)",
+            
+          }}>
+          <div className="columnaImagen" id="ContenedorTexto">
+            <img src={location.state.imagen} className="imagen" alt=""></img>
+          </div>
+          <div className="columnaDatos">
+            <h1 className="titulo">{location.state.titulo}</h1>
+            <p className="descripcionCompleta">{location.state.dCompleta}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  );
+}
+
+function ProductosSmall(){
   const location = useLocation();
   const { height, width } = useWindowDimensions();
   return (
@@ -27,15 +84,12 @@ function Producto(props) {
         </div>
         
         <div className="ColumnasProd">
-          <div className="columnaImagen">
-            <img src={location.state.imagen} className="imagen" alt=""></img>
+          <div className="columnaImagen" id="ContenedorTexto">
+            <img src={location.state.imagen} className="imagenSmall" alt=""></img>
           </div>
           <div className="columnaDatos">
             <h1 className="titulo">{location.state.titulo}</h1>
-            <p className="miniDesc">descripcion: {location.state.descripcion} </p>
-            <p className="descripcionCompleta">{location.state.dCompleta}</p>
-            <p>Ancho {width}</p>
-            <p>LArgo {height}</p>
+            <p className="descripcionCompletaSmall">{location.state.dCompleta}</p>
           </div>
         </div>
       </div>
@@ -43,5 +97,39 @@ function Producto(props) {
     
   );
 }
+
+function ProductosSquare(){
+  const location = useLocation();
+  const { height, width } = useWindowDimensions();
+  return (
+    <div className="productoTotalsi">
+      <img className="backgroundImagenSquare" src= {location.state.imagen}></img>
+      <div
+        className="Producto"
+      >
+        <div className="algoBien">
+          <Link to="/productos">
+            <img src={left} className="left-arrowProducto" alt="" />
+          </Link>
+          <h1 className="top">
+            Producto:
+          </h1>
+        </div>
+        
+        <div className="ColumnasProd">
+          <div className="columnaImagen" id="ContenedorTexto">
+            <img src={location.state.imagen} className="imagenSmall" alt=""></img>
+          </div>
+          <div className="columnaDatos">
+            <h1 className="tituloSquare">{location.state.titulo}</h1>
+            <p className="descripcionCompletaSquare">{location.state.dCompleta}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  );
+}
+
 
 export default Producto;
