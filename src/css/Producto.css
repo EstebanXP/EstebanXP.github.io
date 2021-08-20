@@ -66,7 +66,7 @@
 }
 
 .backgroundImagenProd{
-  height: 100vh;
+  height: 200vh;
   width: 100vw;
   z-index:0 ;
   position: absolute;
@@ -78,7 +78,7 @@
 }
 
 .backgroundImagenSquare{
-  height: 100vh;
+  height: 200vh;
   width: 100vw;
   z-index:0 ;
   position: absolute;
@@ -180,6 +180,33 @@
   }
 }
 
+@media only screen and (max-height: 600px) and (max-width: 900px){
+  
+  .backgroundImagenProd{
+    height: 200vh;
+  
+  }
+  .descripcionCompletaSquare{
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    text-align: justify;
+    font-family: "CircularStd-Book";
+    color: white;
+    z-index: 20;
+    text-align: justify;
+    font-size: .5em;
+  }
+  
+  .tituloSquare{
+    font-family: "CircularStd-Black";
+    text-align: left;
+    font-size: 1.5em;
+    text-align: center;
+  }
+}
+
 @media only screen and (max-height: 1000px){
   
   .backgroundImagenSquare{
@@ -217,5 +244,21 @@
     position: absolute;
     right: 10px;
     left: 25px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .descripcionCompletaSmall{
+    font-size: 1em;
+  }
+}
+
+
+@media only screen and (max-width: 350px) and (max-height: 500px){
+  .descripcionCompletaSmall{
+    font-size: .8em;
+  }
+  .descripcionCompletaSqure{
+    font-size: .8em;
   }
 }
