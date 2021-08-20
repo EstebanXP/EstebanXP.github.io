@@ -41,10 +41,10 @@ const Poupup = () => {
     e.preventDefault();
     if (validarEmail(toSend.correo) === true) {
       send(
-        "service_shg556m",
-        "template_0vnvgms",
+        "service_fw5h9xc",
+        "template_hj1woj8",
         toSend,
-        "user_vR3QsGpeKhWlUGqEAdTHq"
+        "user_aF03oNHJg2rhkwOdjup5R"
       )
         .then(() => {
           Swal.fire(
