@@ -54,6 +54,7 @@ const Poupup = () => {
           );
           handleReset();
           cerrarChat();
+          handleImageClick();
         })
         .catch((err) => {
           console.log("FAILED...", err);
