@@ -8,7 +8,6 @@ import left from "../assets/back.png";
 import { Link } from "react-router-dom";
 import useWindowDimensions from "./funcionVentana";
 import { render } from "@testing-library/react";
-import documento from "../documents/prueba.pdf";
 
 
 function Producto() {
@@ -59,7 +58,9 @@ function ProductosBig(){
           <div className="columnaDatos">
             <h1 className="titulo">{location.state.titulo}</h1>
             <p className="descripcionCompleta">{location.state.dCompleta}</p>
-            <a href={location.state.pdfLink} download="documento">Hola mundo</a>
+            <a href={location.state.pdfLink} download="documento">
+              <button className="botonPDF" value="hola mundo"></button>
+            </a>
             
           </div>
         </div>
