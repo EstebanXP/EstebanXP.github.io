@@ -8,6 +8,8 @@ import left from "../assets/back.png";
 import { Link } from "react-router-dom";
 import useWindowDimensions from "./funcionVentana";
 import { render } from "@testing-library/react";
+import documento from "../documents/prueba.pdf";
+
 
 function Producto() {
   const { height, width } = useWindowDimensions();
@@ -33,7 +35,7 @@ function ProductosBig(){
   const { height, width } = useWindowDimensions();
   return (
     <div className="productoTotalsi">
-      <img className="backgroundImagenProd" src= {location.state.imagen}></img>
+      <img className="backgroundImagenProd" src= {location.state.imagen} alt=""></img>
       <div
         className="Producto"
       >
@@ -57,6 +59,8 @@ function ProductosBig(){
           <div className="columnaDatos">
             <h1 className="titulo">{location.state.titulo}</h1>
             <p className="descripcionCompleta">{location.state.dCompleta}</p>
+            <a href={location.state.pdfLink} download="documento">Hola mundo</a>
+            
           </div>
         </div>
       </div>
@@ -70,7 +74,7 @@ function ProductosSmall(){
   const { height, width } = useWindowDimensions();
   return (
     <div className="productoTotalsi">
-      <img className="backgroundImagenProd" src= {location.state.imagen}></img>
+      <img className="backgroundImagenProd" src= {location.state.imagen} alt=""></img>
       <div
         className="Producto"
       >
@@ -90,6 +94,7 @@ function ProductosSmall(){
           <div className="columnaDatos">
             <h1 className="titulo">{location.state.titulo}</h1>
             <p className="descripcionCompletaSmall">{location.state.dCompleta}</p>
+            <a href={location.state.pdfLink} download="documento">Hola mundo</a>
           </div>
         </div>
       </div>
@@ -103,7 +108,7 @@ function ProductosSquare(){
   const { height, width } = useWindowDimensions();
   return (
     <div className="productoTotalsi">
-      <img className="backgroundImagenSquare" src= {location.state.imagen}></img>
+      <img className="backgroundImagenSquare" src= {location.state.imagen} alt=""></img>
       <div
         className="Producto"
       >
@@ -123,6 +128,7 @@ function ProductosSquare(){
           <div className="columnaDatos">
             <h1 className="tituloSquare">{location.state.titulo}</h1>
             <p className="descripcionCompletaSquare">{location.state.dCompleta}</p>
+            <a href={location.state.pdfLink} download="documento">Hola mundo</a>
           </div>
         </div>
       </div>

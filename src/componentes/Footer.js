@@ -11,10 +11,10 @@ import { Link } from "react-router-dom";
 
 function FooterPage(){
   const location = useLocation();
-    if (location.pathname == '/'){
+    if (location.pathname === '/'){
         return <Elsewhere></Elsewhere> ;
     }
-    else if(location.pathname == '/producto'){
+    else if(location.pathname === '/producto'){
         return null;
     }
     else{
