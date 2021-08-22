@@ -119,12 +119,12 @@
 
 .botonPDF{
   box-sizing: border-box;
-  height: 25px;
-  width: 85px;
+  height: 45px;
+  width: 185px;
   color: #FFF;
   font-family: "Kiona-Regular";
-  font-size: 5px;
-  line-height: 48px;
+  font-size: 1em;
+
   text-align: center;
   background-color:  #E9971B;
   border-radius: 25px;

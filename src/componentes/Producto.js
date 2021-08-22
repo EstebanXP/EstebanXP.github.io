@@ -59,7 +59,7 @@ function ProductosBig(){
             <h1 className="titulo">{location.state.titulo}</h1>
             <p className="descripcionCompleta">{location.state.dCompleta}</p>
             <a href={location.state.pdfLink} download="documento">
-              <button className="botonPDF" value="hola mundo"></button>
+              <button className="botonPDF" value="hola mundo">Boton Prueba PDFs</button>
             </a>
             
           </div>
@@ -95,7 +95,9 @@ function ProductosSmall(){
           <div className="columnaDatos">
             <h1 className="titulo">{location.state.titulo}</h1>
             <p className="descripcionCompletaSmall">{location.state.dCompleta}</p>
-            <a href={location.state.pdfLink} download="documento">Hola mundo</a>
+            <a href={location.state.pdfLink} download="documento">
+              <button className="botonPDF" value="hola mundo">Boton Prueba PDFs</button>
+            </a>
           </div>
         </div>
       </div>
@@ -129,7 +131,9 @@ function ProductosSquare(){
           <div className="columnaDatos">
             <h1 className="tituloSquare">{location.state.titulo}</h1>
             <p className="descripcionCompletaSquare">{location.state.dCompleta}</p>
-            <a href={location.state.pdfLink} download="documento">Hola mundo</a>
+            <a href={location.state.pdfLink} download="documento">
+              <button className="botonPDF" value="hola mundo">Boton Prueba PDFs</button>
+            </a>
           </div>
         </div>
       </div>

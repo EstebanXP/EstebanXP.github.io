@@ -97,7 +97,7 @@ const Poupup = () => {
 
   function handleImageClick() {
     setStateImage(!stateImage);
-    console.log(stateImage);
+    
   }
 
   return (
