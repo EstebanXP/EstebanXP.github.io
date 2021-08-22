@@ -12,7 +12,7 @@ import { useEffect, useState } from "react";
 
 function ImagenFondo(){
     const location = useLocation();
-    if (location.pathname == '/' && location.pathname == '/proyectofruteria'){
+    if (location.pathname == '/' || location.pathname == '/proyectofruteria'){
         return <Home></Home>;
     }
     else if(location.pathname == '/productos'){
