@@ -21,7 +21,7 @@ function ImagenFondo(){
     else if(location.pathname == '/productos'){
         return <Prod/>;
     }
-    else if(location.pathname == 'producto'){
+    else{
         return null;
     }
 }
