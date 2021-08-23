@@ -12,16 +12,20 @@ import { useEffect, useState } from "react";
 
 function ImagenFondo(){
     const location = useLocation();
-    if (location.pathname == '/' || location.pathname == '/proyectofruteria'){
+    if (location.pathname == '/' ){
+        return <Home></Home>;
+    }
+    else if(location.pathname == 'proyectofruteria/'){
         return <Home></Home>;
     }
     else if(location.pathname == '/productos'){
         return <Prod/>;
     }
-    else{
+    else if(location.pathname == 'producto'){
         return null;
     }
 }
+
 
 function Home(){
     

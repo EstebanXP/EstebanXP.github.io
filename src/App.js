@@ -29,7 +29,7 @@ function App() {
           <div>
             <header className="App-header">
               <Navbar />
-              <ImagenFondo />
+              <ImagenFondo/>
             </header>
           </div>
           <div className="App-Body">
