@@ -9,6 +9,7 @@ import Productos from './Productos.js';
 import { EasybaseProvider, useEasybase } from 'easybase-react';
 import { useLocation } from 'react-router';
 import { useEffect, useState } from "react";
+import Error from './Error'; 
 
 function ImagenFondo(){
     const location = useLocation();
@@ -22,7 +23,7 @@ function ImagenFondo(){
         return <Prod/>;
     }
     else{
-        return null;
+        return <Error />;
     }
 }
 

@@ -8,7 +8,8 @@ import left from "../assets/back.png";
 import { Link } from "react-router-dom";
 import useWindowDimensions from "./funcionVentana";
 import { render } from "@testing-library/react";
-
+import { saveAs } from 'file-saver'
+import { jsPDF } from "jspdf";
 
 function Producto() {
   const { height, width } = useWindowDimensions();
@@ -28,6 +29,8 @@ function Producto() {
   }
   
 }
+
+
 
 function ProductosBig(){
   const location = useLocation();
@@ -58,8 +61,11 @@ function ProductosBig(){
           <div className="columnaDatos">
             <h1 className="titulo">{location.state.titulo}</h1>
             <p className="descripcionCompleta">{location.state.dCompleta}</p>
-            <a href={location.state.pdfLink} download="documento">
-              <button className="botonPDF" value="hola mundo">Boton Prueba PDFs</button>
+
+            <img src={location.state.imagen} href="https://www.youtube.com/watch?v=Rn4n-CQ4_mk"></img>
+
+            <a href={location.state.pdfLink} download="documento.pdf">
+              <button className="botonPDF" value="holamundo">Boton Prueba PDFs1</button>
             </a>
             
           </div>
@@ -95,6 +101,26 @@ function ProductosSmall(){
           <div className="columnaDatos">
             <h1 className="titulo">{location.state.titulo}</h1>
             <p className="descripcionCompletaSmall">{location.state.dCompleta}</p>
+
+            <a
+              class="btn btn-danger"
+              role="button"
+              href={location.state.pdfLink}
+              download="je"
+            >
+              Download
+            </a>
+            <a
+              class="btn btn-danger"
+              role="button"
+              href={location.state.pdfLink}
+              target="_blank"
+              rel="noreferrer"
+            >
+              dasdad
+            </a>
+
+
             <a href={location.state.pdfLink} download="documento">
               <button className="botonPDF" value="hola mundo">Boton Prueba PDFs</button>
             </a>
@@ -131,6 +157,27 @@ function ProductosSquare(){
           <div className="columnaDatos">
             <h1 className="tituloSquare">{location.state.titulo}</h1>
             <p className="descripcionCompletaSquare">{location.state.dCompleta}</p>
+
+            <a
+              class="btn btn-danger"
+              role="button"
+              href={location.state.pdfLink}
+              download="je"
+            >
+              Download
+            </a>
+            <a
+              class="btn btn-danger"
+              role="button"
+              href={location.state.pdfLink}
+              target="_blank"
+              rel="noreferrer"
+            >
+              dasdad
+            </a>
+
+
+
             <a href={location.state.pdfLink} download="documento">
               <button className="botonPDF" value="hola mundo">Boton Prueba PDFs</button>
             </a>
