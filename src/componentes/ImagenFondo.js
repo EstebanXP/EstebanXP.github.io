@@ -23,7 +23,7 @@ function ImagenFondo(){
         return <Prod/>;
     }
     else{
-        return <Error />;
+        return null;
     }
 }
 

@@ -17,6 +17,9 @@ function FooterPage(){
     else if(location.pathname === '/producto'){
         return null;
     }
+    else if(location.pathname != '/'  && location.pathname !='/productos'){
+      return null ;
+    }
     else{
         return <Elsewhere></Elsewhere> ;
     }

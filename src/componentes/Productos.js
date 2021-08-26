@@ -77,7 +77,8 @@ export default function Productos() {
                     descripcion : ele.descripcion,
                     imagen : ele.thumbnail,
                     dCompleta: ele.desccompleta,
-                    pdfLink: ele.pdf
+                    pdfLink: ele.pdf,
+                    fondoExtra: ele.imagenfond
                   }
                 }}>
                   <Button  className="botonProductoVermas" >VER MÁS...</Button>
