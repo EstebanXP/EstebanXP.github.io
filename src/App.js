@@ -37,11 +37,11 @@ function App() {
             
             <Switch>
               <Route path="/productos" exact component={Productos}></Route>
-            </Switch>
-            <Switch>
+        
               <Route path="/producto" exact component={Producto}></Route>
-            </Switch>
             
+              <Route path="*" component={Error}></Route>
+            </Switch>
             <Poupup />
           </div>
           <FooterPage />

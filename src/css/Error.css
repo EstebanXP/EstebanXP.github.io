@@ -1,4 +1,35 @@
-.wrapper{
+.wrapperError{
     color: white;
-    background-color: aqua;
+    background-color:#333841;
+    height: 100vh;
 }
+
+.miniWrapper{
+    padding-top: calc(42px + 2vh);
+}
+
+.titulo{
+    font-family: 'CircularStd-Book';
+}
+
+.robot{
+    width: 450px;
+    height: 450px;
+}
+
+.columna2{
+    border-top: 600px;
+    height: 15px;
+    font-family: 'CircularStd-Book';
+    font-size: calc(0.5em + 1vw);
+}
+
+
+/*@media (min-width: 768px) 
+{
+   .columna2
+   {
+       font-size: 17px; 
+   }
+   
+}*/
