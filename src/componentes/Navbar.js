@@ -12,7 +12,7 @@ import { useLocation } from 'react-router';
 
 function Navbar(){
   const location = useLocation();
-  if(location.pathname === '/producto'){
+  if(location.pathname === '/producto' || location.pathname==='/unavailable'){
       return null;
   }
   else{

@@ -12,9 +12,7 @@ const error = () => {
         </h1>
         
           <div className="columna2">
-           <h2>
-              Error 404
-           </h2>
+           
            <img src={robot} className="robot" alt=""></img>
           </div>
           
