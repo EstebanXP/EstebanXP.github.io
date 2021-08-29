@@ -19,6 +19,7 @@ import Productos from "./componentes/Productos";
 import CarouselProductos from "./componentes/CarouselProductos";
 import Producto from "./componentes/Producto";
 import Error from "./componentes/Error";
+import Unavailable from "./componentes/Unavailable";
 
 
 function App() {
@@ -37,11 +38,12 @@ function App() {
             
             <Switch>
               <Route path="/productos" exact component={Productos}></Route>
-            </Switch>
-            <Switch>
+        
               <Route path="/producto" exact component={Producto}></Route>
+              <Route path="/unavailable" exact component={Unavailable}></Route>
+
+              <Route path="*" component={Error}></Route>
             </Switch>
-            
             <Poupup />
           </div>
           <FooterPage />

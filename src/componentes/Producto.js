@@ -74,10 +74,11 @@ function ProductosBig() {
                 Boton Prueba PDFs1
               </button>
             </a>
-
-            <a href={location.state.pdfLink} download="documento.pdf">
-              <img src={location.state.imagen} alt="aaa" width="500" height="600"></img>
-            </a>
+          
+           
+            <form>
+              <button formaction={location.state.pdfLink}>Go to Stack Overflow!</button>
+            </form>
 
           </div>
         </div>
@@ -144,7 +145,10 @@ function ProductosSmall() {
               dasdad
             </a>
 
-            
+            <form>
+              <button formaction={location.state.pdfLink}>Go to Stack Overflow!</button>
+            </form>
+
           </div>
         </div>
       </div>
@@ -215,6 +219,10 @@ function ProductosSquare() {
                 Boton Prueba PDFs
               </button>
             </a>
+            <form>
+              <button formaction={location.state.pdfLink}>Go to Stack Overflow!</button>
+            </form>
+
           </div>
         </div>
       </div>

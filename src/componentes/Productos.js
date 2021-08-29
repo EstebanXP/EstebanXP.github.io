@@ -16,11 +16,7 @@ export default function Productos() {
     const { height, width } = useWindowDimensions();
     //Este es el hook que agarra la altura y anchura, lo cale con la funcion dimensiones, si la necesitas 
     //en otro componente nomas importa el useWindowDimensions y ya lo puedes jalar con los hooks tambien 
-    
-
-    var dimensiones = ()=>{
-      console.log(height + "AAAAAAA"+ width); 
-    }
+  
     if(width>600){
       return(
         <Large/>
