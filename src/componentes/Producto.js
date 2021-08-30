@@ -10,15 +10,40 @@ import useWindowDimensions from "./funcionVentana";
 import { render } from "@testing-library/react";
 import { saveAs } from "file-saver";
 import { jsPDF } from "jspdf";
+import Error404 from "./Error.js";
+
 
 function Producto() {
+  const location = useLocation();
   const { height, width } = useWindowDimensions();
-  if (width < 500) {
+  if(getSafe(() =>location.state.titulo)==undefined){
+    return <div>
+            <div className="algoBien">
+              <Link to="/productos">
+                <img src={left} className="left-arrowProducto" alt="" />
+              </Link>
+                <h1 className="top">Producto:</h1>
+            </div>
+            <Error404></Error404>
+          </div>
+     ;
+  }
+  else if (width < 500) {
     return <ProductosSmall></ProductosSmall>;
   } else if (Math.abs(width - height) < 400) {
     return <ProductosSquare />;
-  } else {
+  } 
+
+  else {
     return <ProductosBig />;
+  }
+}
+
+function getSafe(fn) {
+  try {
+      return fn();
+  } catch (e) {
+      return undefined;
   }
 }
 
@@ -26,7 +51,7 @@ function checkBackground(test) {
   if (test == null) {
     return false;
   }
-  console.log(test);
+  return true;
 }
 
 function ProductosBig() {
@@ -69,16 +94,7 @@ function ProductosBig() {
             <h1 className="titulo">{location.state.titulo}</h1>
             <p className="descripcionCompleta">{location.state.dCompleta}</p>
 
-            <a href={location.state.pdfLink} download="documento.pdf">
-              <button className="botonPDF" value="holamundo">
-                Boton Prueba PDFs1
-              </button>
-            </a>
-          
-           
-            <form>
-              <button formaction="https://cdn.easybase.io/679eec3a4339166dc6058e0fb3c_eaedfb9e-41f1-497f-aae9-d6277556712b.pdf">Go to Stack Overflow!</button>
-            </form>
+            <a href={location.state.pdfLink}><div className="squareButton"></div></a>
 
           </div>
         </div>
@@ -90,6 +106,7 @@ function ProductosBig() {
 function ProductosSmall() {
   const location = useLocation();
   const { height, width } = useWindowDimensions();
+  var a = `https:// $ {location.state.pdfLink}`;
   return (
     <div className="productoTotalsi">
       {checkBackground(location.state.fondoExtra) ? (
@@ -127,27 +144,7 @@ function ProductosSmall() {
               {location.state.dCompleta}
             </p>
 
-            <a
-              class="btn btn-danger"
-              role="button"
-              href={location.state.pdfLink}
-              download="je"
-            >
-              Download
-            </a>
-            <a
-              class="btn btn-danger"
-              role="button"
-              href={location.state.pdfLink}
-              target="_blank"
-              rel="noreferrer"
-            >
-              dasdad
-            </a>
-
-            <form>
-              <button formaction="https://cdn.easybase.io/679eec3a4339166dc6058e0fb3c_eaedfb9e-41f1-497f-aae9-d6277556712b.pdf">Go to Stack Overflow!</button>
-            </form>
+            <a href= {location.state.pdfLink}><div className="squareButton"></div></a>
 
           </div>
         </div>
@@ -195,34 +192,7 @@ function ProductosSquare() {
             <p className="descripcionCompletaSquare">
               {location.state.dCompleta}
             </p>
-
-            <a
-              class="btn btn-danger"
-              role="button"
-              href={location.state.pdfLink}
-              download="je"
-            >
-              Download
-            </a>
-            <a
-              class="btn btn-danger"
-              role="button"
-              href={location.state.pdfLink}
-              target="_blank"
-              rel="noreferrer"
-            >
-              dasdad
-            </a>
-
-            <a href={location.state.pdfLink} download="documento">
-              <button className="botonPDF" value="hola mundo">
-                Boton Prueba PDFs
-              </button>
-            </a>
-            <form>
-              <button formaction={location.state.pdfLink}>Go to Stack Overflow!</button>
-            </form>
-
+            <a href={location.state.pdfLink}><div className="squareButton"></div></a>
           </div>
         </div>
       </div>

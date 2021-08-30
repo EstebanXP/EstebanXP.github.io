@@ -134,7 +134,9 @@ export default function Productos() {
                     titulo : ele.titulo,
                     descripcion : ele.descripcion,
                     imagen : ele.thumbnail,
-                    dCompleta: ele.desccompleta
+                    dCompleta: ele.desccompleta,
+                    pdfLink: ele.pdf,
+                    fondoExtra: ele.imagenfond
                   }
                 }}>
                   <Button  className="botonProductoVermas" >VER MÁS...</Button>
@@ -182,7 +184,9 @@ export default function Productos() {
                     titulo : ele.titulo,
                     descripcion : ele.descripcion,
                     imagen : ele.thumbnail,
-                    dCompleta: ele.desccompleta
+                    dCompleta: ele.desccompleta,
+                    pdfLink: ele.pdf,
+                    fondoExtra: ele.imagenfond
                   }
                 }}>
                   <Button  className="botonProductoVermas" >VER MÁS...</Button>

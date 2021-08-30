@@ -172,6 +172,12 @@
   text-align: center;
 }
 
+.squareButton {
+  height: 50px;
+  width: 50px;
+  background-color: #555;
+}
+
 
 @media only screen and (min-height: 900px) {
   

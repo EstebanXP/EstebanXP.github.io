@@ -3,12 +3,12 @@ import "../css/Error.css";
 import robot from "../assets/robot2.png";
 import { Col, Row } from "react-bootstrap";
 
-const error = () => {
+const ErrorCuatro = () => {
   return (
     <div className="wrapperError">
       <div className="miniWrapper">
         <h1 className="titulo">
-          Lo sentimos, la verdad no tenemos idea de a donde intentabas ingresar :(
+          Lo sentimos, no tenemos idea de a donde intentabas ingresar :(
         </h1>
         
           <div className="columna2">
@@ -21,4 +21,4 @@ const error = () => {
   );
 };
 
-export default error;
+export default ErrorCuatro;
