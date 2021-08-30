@@ -23,10 +23,10 @@ function Producto() {
 }
 
 function checkBackground(test) {
-  if (test === null) {
+  if (test == null) {
     return false;
   }
-  return true;
+  console.log(test);
 }
 
 function ProductosBig() {
@@ -77,7 +77,7 @@ function ProductosBig() {
           
            
             <form>
-              <button formaction={location.state.pdfLink}>Go to Stack Overflow!</button>
+              <button formaction="https://cdn.easybase.io/679eec3a4339166dc6058e0fb3c_eaedfb9e-41f1-497f-aae9-d6277556712b.pdf">Go to Stack Overflow!</button>
             </form>
 
           </div>
@@ -146,7 +146,7 @@ function ProductosSmall() {
             </a>
 
             <form>
-              <button formaction={location.state.pdfLink}>Go to Stack Overflow!</button>
+              <button formaction="https://cdn.easybase.io/679eec3a4339166dc6058e0fb3c_eaedfb9e-41f1-497f-aae9-d6277556712b.pdf">Go to Stack Overflow!</button>
             </form>
 
           </div>

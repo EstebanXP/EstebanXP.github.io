@@ -9,7 +9,7 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button'
 import CarouselProductos from './CarouselProductos'; 
 import useWindowDimensions from './funcionVentana';
-
+import ImagenFondo from './ImagenFondo.js';
 
 export default function Productos() {
 
@@ -19,17 +19,29 @@ export default function Productos() {
   
     if(width>600){
       return(
-        <Large/>
+        <div>
+          <ImagenFondo></ImagenFondo>
+          <Large/>
+        </div>
+        
       )
     }
     else if(width<=600 && width>370){
       return(
-        <Smol/>
+        <div>
+          <ImagenFondo></ImagenFondo>
+          <Smol/>
+        </div>
+        
       )
     }
     else if(width<=370){
       return(
-        <ExtraSmol/>
+        <div>
+          <ImagenFondo></ImagenFondo>
+          <ExtraSmol/>
+        </div>
+        
       )
     }
     

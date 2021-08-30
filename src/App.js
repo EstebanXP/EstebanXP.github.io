@@ -31,12 +31,12 @@ function App() {
           <div>
             <header className="App-header">
               <Navbar />
-              <ImagenFondo/>
             </header>
           </div>
           <div className="App-Body">
             
             <Switch>
+              <Route path="/" exact component={ImagenFondo}></Route>
               <Route path="/productos" exact component={Productos}></Route>
         
               <Route path="/producto" exact component={Producto}></Route>
