@@ -34,7 +34,7 @@ function Home(){
     const { db } = useEasybase();
 
     const mounted = async() => {
-      const ebData = await db("HOME").return().limit(10).all();
+      const ebData = await db("HOME").return().all();
       setEasybaseData(ebData);
     }
   
