@@ -7,6 +7,7 @@ import { EasybaseProvider, useEasybase } from 'easybase-react';
 import { useLocation } from 'react-router';
 import { useEffect, useState } from "react";
 import Error from './Error'; 
+import InfoEasy from './InfoEasyBase';
 
 function ImagenFondo(){
     const location = useLocation();
@@ -58,6 +59,7 @@ function Home(){
                     )}
                 </Carousel>    
             </div>
+            <InfoEasy name={'LinkFacebook'}></InfoEasy>
 
         </EasybaseProvider>
     );

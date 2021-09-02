@@ -7,18 +7,11 @@ import { EasybaseProvider, useEasybase } from 'easybase-react';
 import { useEffect, useState } from "react";
  
 
-function InfoEasy(){
-    return <Call></Call>
-}
-
-
-function Call(){
-    
+function InfoEasy(props){
     const [easybaseData, setEasybaseData] = useState([]);
     const { db } = useEasybase();
-
     const mounted = async() => {
-      const ebData = await db("INFONOBORRAR").return().one();
+      const ebData = await db("INFONOBORRAR").return().where({"info":props.name}).one();
       setEasybaseData(ebData);
     }
   
@@ -34,5 +27,6 @@ function Call(){
         </EasybaseProvider>
     );
 }
+
 
 export default InfoEasy;
