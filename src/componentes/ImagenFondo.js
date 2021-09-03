@@ -59,7 +59,7 @@ function Home(){
                     )}
                 </Carousel>    
             </div>
-            <InfoEasy name={'LinkFacebook'}></InfoEasy>
+            <InfoEasy name={'LinkFacebook'} tipo={"txt"} class="algo"></InfoEasy>
 
         </EasybaseProvider>
     );

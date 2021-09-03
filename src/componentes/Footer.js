@@ -8,6 +8,7 @@ import Instagram from "../assets/Instagram.svg";
 import Facebook from "../assets/Facebook.svg";
 import { useLocation } from 'react-router';
 import { Link } from "react-router-dom";
+import InfoEasy from "./InfoEasyBase";
 
 function FooterPage(){
   const location = useLocation();
@@ -41,7 +42,7 @@ function Elsewhere(){
         <a href="https://www.google.com">
           <img className="iconSocialIndiv" src={Whatsapp} alt=""></img>
         </a>
-        <a href="https://www.google.com">
+        <a href={InfoEasy}>
           <img className="iconSocialIndiv" src={Facebook} alt=""></img>
         </a>
         <a href="https://www.google.com">

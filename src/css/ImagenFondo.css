@@ -66,6 +66,10 @@ li.active{
     display: block;
 }
 
+.algo{
+    font-size: 24px;
+}
+
 @media (max-width: 1080px) {
     
 

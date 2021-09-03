@@ -18,15 +18,28 @@ function InfoEasy(props){
     useEffect(() => {
       mounted();
     }, [])
-  
-    return(
+
+    if(props.tipo=="txt"){
+        return(
         <EasybaseProvider ebconfig={ebconfig}>
-            {easybaseData.links}
-
-
+            <p className={props.class}>{easybaseData.links}</p>
         </EasybaseProvider>
-    );
+        );
+    }
+    else if(props.tipo=="img"){
+        return(
+            <EasybaseProvider ebconfig={ebconfig}>
+                <img src={easybaseData.img}></img>
+            </EasybaseProvider>
+        );
+    }
+    else{
+        return(
+            null
+        );
+    }
 }
+    
 
 
 export default InfoEasy;
