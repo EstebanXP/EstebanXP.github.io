@@ -8,6 +8,7 @@ import Twitter from "../assets/Twitter.svg";
 import Instagram from "../assets/Instagram.svg";
 import Facebook from "../assets/Facebook.svg";
 import { useLocation } from 'react-router';
+import Amazon from "../assets/Amazon.png";
 
 
 function Navbar(){
@@ -62,6 +63,9 @@ function Always(){
                 id="iconoSocial"
                 alt=""
               ></img>
+            </a>
+            <a href="https://www.google.com">
+              <img className="iconSocialIndivNav" src={Amazon} alt=""></img>
             </a>
           </Col>
           <Col className="colNavBar">

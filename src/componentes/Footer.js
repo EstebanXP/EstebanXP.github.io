@@ -6,6 +6,7 @@ import Whatsapp from "../assets/Whatsapp.svg";
 import Twitter from "../assets/Twitter.svg";
 import Instagram from "../assets/Instagram.svg";
 import Facebook from "../assets/Facebook.svg";
+import Amazon from "../assets/Amazon.png";
 import { useLocation } from 'react-router';
 import { Link } from "react-router-dom";
 import InfoEasy from "./InfoEasyBase";
@@ -50,6 +51,9 @@ function Elsewhere(){
         </a>
         <a href="https://www.google.com">
           <img className="iconSocialIndiv" src={Instagram} alt=""></img>
+        </a>
+        <a href="https://www.google.com">
+          <img className="iconSocialIndiv" src={Amazon} alt=""></img>
         </a>
       </div>
     </Container>
