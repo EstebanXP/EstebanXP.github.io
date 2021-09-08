@@ -6,6 +6,9 @@ import Productos from './Productos.js';
 import { EasybaseProvider, useEasybase } from 'easybase-react';
 import { useEffect, useState } from "react";
  
+/*Props.    tipo= Para si es txt o img 
+            name= Nombre de la fila de EasyBase
+            class = Clase para css*/
 
 function InfoEasy(props){
     const [easybaseData, setEasybaseData] = useState([]);
@@ -29,7 +32,7 @@ function InfoEasy(props){
     else if(props.tipo=="img"){
         return(
             <EasybaseProvider ebconfig={ebconfig}>
-                <img src={easybaseData.img}></img>
+                <img src={easybaseData.imagen} className={props.class}></img>
             </EasybaseProvider>
         );
     }

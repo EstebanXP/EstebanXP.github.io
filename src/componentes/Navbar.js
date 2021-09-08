@@ -9,7 +9,11 @@ import Instagram from "../assets/Instagram.svg";
 import Facebook from "../assets/Facebook.svg";
 import { useLocation } from 'react-router';
 import Amazon from "../assets/Amazon.png";
-
+import InfoEasy from "./InfoEasyBase";
+import ebconfig from '../ebconfig'
+import Productos from './Productos.js';
+import { EasybaseProvider, useEasybase } from 'easybase-react';
+import { useEffect, useState } from "react";
 
 function Navbar(){
   const location = useLocation();
@@ -32,7 +36,7 @@ function Always(){
             </Link>
           </Col>
           <Col xs={3} sm={6} md={8} lg={9} className="colNavBar">
-            <a href="https://www.google.com">
+            <a href={LinksE("LinkWhatsapp")}>
               <img
                 className="iconSocialIndivNav"
                 src={Whatsapp}
@@ -40,7 +44,7 @@ function Always(){
                 alt=""
               />
             </a>
-            <a href="https://www.google.com">
+            <a href={LinksE("LinkFacebook")}>
               <img
                 className="iconSocialIndivNav"
                 src={Facebook}
@@ -48,7 +52,7 @@ function Always(){
                 alt=""
               />
             </a>
-            <a href="https://www.google.com">
+            <a href={LinksE("LinkTwitter")}>
               <img
                 className="iconSocialIndivNav"
                 src={Twitter}
@@ -56,7 +60,7 @@ function Always(){
                 alt=""
               ></img>
             </a>
-            <a href="https://www.google.com">
+            <a href={LinksE("LinkInstagram")}>
               <img
                 className="iconSocialIndivNav"
                 src={Instagram}
@@ -64,7 +68,7 @@ function Always(){
                 alt=""
               ></img>
             </a>
-            <a href="https://www.google.com">
+            <a href={LinksE("LinkAmazon")}>
               <img className="iconSocialIndivNav" src={Amazon} alt=""></img>
             </a>
           </Col>
@@ -77,6 +81,23 @@ function Always(){
       </Container>
     </div>
   );
+}
+
+function LinksE(name){
+  const [easybaseData, setEasybaseData] = useState([]);
+    const { db } = useEasybase();
+    const mounted = async() => {
+      const ebData = await db("INFONOBORRAR").return().where({"info":name}).one();
+      setEasybaseData(ebData);
+    }
+  
+    useEffect(() => {
+      mounted();
+    }, [])
+
+    return(
+      easybaseData.links
+    )
 }
 
 export default Navbar;

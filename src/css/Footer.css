@@ -29,11 +29,12 @@
   }
 
   .leftColFoot{
-    float: left;
-    font-family: 'CircularStd-Book';
+    
+    font-family: 'CircularStd-Black';
     font-size: 1.5em;
     color: white;
   }
+  
 
   .leftColFoot:hover{
     
@@ -41,11 +42,28 @@
   }
 
   .logoFooter{
-    float: right;
+    
     font-family: 'CircularStd-Black';
     
   }
 
   img.iconSocialIndiv:hover{
     transform: scale(1.5);
+  }
+
+  .footerText{
+    font-family: 'CircularStd-Book';
+    margin-bottom: -.1em;
+  }
+
+  .middleColFoot{
+    text-align: center;
+    padding-bottom: 1em;
+    
+  }
+
+  .LogoFooter{
+    max-height: 100px;
+    margin-top:-52px;
+
   }
