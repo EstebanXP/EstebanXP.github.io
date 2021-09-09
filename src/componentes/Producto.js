@@ -24,7 +24,7 @@ function Producto() {
               </Link>
                 <h1 className="top">Producto:</h1>
             </div>
-            <Error404></Error404>
+            
           </div>
      ;
   }
@@ -87,14 +87,18 @@ function ProductosBig() {
             gridTemplateColumns: "repeat(2, 1fr)",
           }}
         >
+          
           <div className="columnaImagen" id="ContenedorTexto">
             <img src={location.state.imagen} className="imagen" alt=""></img>
+            <div className="divButtonProd">
+              <a href={location.state.pdfLink}><div className="squareButton"><p className="TextoBotonProd">DESCARGAR INFORMACIÓN</p></div></a>
+            </div>
+            
           </div>
           <div className="columnaDatos">
             <h1 className="titulo">{location.state.titulo}</h1>
             <p className="descripcionCompleta">{location.state.dCompleta}</p>
 
-            <a href={location.state.pdfLink}><div className="squareButton"></div></a>
 
           </div>
         </div>
@@ -137,15 +141,15 @@ function ProductosSmall() {
               className="imagenSmall"
               alt=""
             ></img>
+            <div className="divButtonSmall">
+              <a href={location.state.pdfLink}><div className="squareButtonSmall"><p className="TextoBotonProdSmall">DESCARGAR INFORMACIÓN</p></div></a>
+            </div>
           </div>
           <div className="columnaDatos">
             <h1 className="titulo">{location.state.titulo}</h1>
             <p className="descripcionCompletaSmall">
               {location.state.dCompleta}
             </p>
-
-            <a href= {location.state.pdfLink}><div className="squareButton"></div></a>
-
           </div>
         </div>
       </div>
@@ -186,13 +190,16 @@ function ProductosSquare() {
               className="imagenSmall"
               alt=""
             ></img>
+            <div className="divButtonSquare">
+              <a href={location.state.pdfLink}><div className="squareButton"><p className="TextoBotonProd">DESCARGAR INFORMACIÓN</p></div></a>
+            </div>
           </div>
           <div className="columnaDatos">
             <h1 className="tituloSquare">{location.state.titulo}</h1>
             <p className="descripcionCompletaSquare">
               {location.state.dCompleta}
             </p>
-            <a href={location.state.pdfLink}><div className="squareButton"></div></a>
+            
           </div>
         </div>
       </div>

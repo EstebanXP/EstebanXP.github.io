@@ -173,9 +173,63 @@
 }
 
 .squareButton {
-  height: 50px;
-  width: 50px;
-  background-color: #555;
+  
+  height: 80px;
+  width: 20vw;
+  min-width: 200px;
+  background-color:#E9971B;
+  border-radius: 30px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.squareButtonSmall {
+  
+  height: 60px;
+  width: 20vw;
+  min-width: 200px;
+  background-color:#E9971B;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 5px;
+}
+
+
+
+.divButtonSquare{
+  margin: auto;
+  width: 50%;
+}
+
+.TextoBotonProd{
+  color: #FFF;
+  font-family: "Kiona-Regular";
+  
+  font-size:1.5em ;
+  
+}
+
+.TextoBotonProdSmall{
+  color: #FFF;
+  font-family: "Kiona-Regular";
+  
+  font-size:1.2em ;
+  
+}
+
+.divButtonProd a:link{
+  
+  text-decoration: none;
+}
+
+
+.divButtonSquare a:link{
+  
+  text-decoration: none;
+}
+.divButtonSmall a:link{
+  
+  text-decoration: none;
 }
 
 
