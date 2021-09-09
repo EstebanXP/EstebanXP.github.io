@@ -70,6 +70,15 @@ img.iconSocialIndivNav:hover{
   flex-wrap:nowrap !important;
 }
 
+.logoNav{
+  max-height: 34px;
+  padding-top: 4px;  
+}
+
+.logoNav:hover{
+  transform: scale(1.2);
+}
+
 @media (max-width: 514px) {
   .iconSocialIndivNav{
       height: 3vw !important;
