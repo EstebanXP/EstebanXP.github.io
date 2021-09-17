@@ -17,7 +17,7 @@
     margin-left: 2%;
     margin-right: 2%;
     max-height: 250px;
-    
+    z-index: 1;
     
     
 }
@@ -65,7 +65,7 @@
     
 }
 
-.Cuerpo h1{
+.tituloBody{
     font-family: 'CircularStd-Black';
     font-size: 4em;
     padding-top: 5vh;

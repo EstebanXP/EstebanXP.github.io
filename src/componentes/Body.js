@@ -1,39 +1,33 @@
 import React, { Fragment } from "react";
 import "../css/Body.css";
-
+import Virgilio from '../assets/VIRGILIO.png';
+import Ronnie from '../assets/RONNIE.png';
+import InfoEasy from "./InfoEasyBase";
+import { Container } from "react-bootstrap";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 const Body = () => {
   return (
     <div className="Cuerpo">
-      <div className="borderBody">
+      <div className="borderBody"></div>
+      <InfoEasy tipo="txt" name="TituloParrafoProductos" class="tituloBody"></InfoEasy>
+      <Container className="ContainerBody">
+        <Row>
+          <Col>
+            <img src={Virgilio} class="virgilio"/>
+            <p className="mascotaName">Virgilio</p>
+          </Col>
+          <Col lg={8} md={8} sm={8} xl={8} xxl={8}>
+            <InfoEasy tipo="txt" name="ParrafoProductos" class="textoBody"></InfoEasy>
+          </Col>
+          <Col>
+          <img src={Ronnie} class="ronnie"/>
+          <p className="mascotaName">Ronnie</p>
+          </Col>
+        </Row>
+      </Container>
 
-      </div>
-      <h1>Quiénes somos</h1>
-      <p className="textoBody">
-      Nacimos con la idea de llevar la mejor calidad al cliente,
-      nata como las conocidas tiendas de la esquina. Fundada por
-      dos hermanos que crecieron viendo como su padre servía a
-      su comunidad en una ranchería mediante el comercio,
-      donde en tiempos viejos solo las ciudades tenían posibilidad
-      de tener los bienes de despensa para las familias.
-      Aprendido esto, después de trabajar con su padre, se llevó
-      a cabo la fundación del supermercado en la comunidad
-      menonita, uniendo las riquezas de nuestras culturas.
-      Con los años se ha ido enfocando no solo al comercio sino la
-      industria alimentaria, siempre con el eslogan, donde la
-      calidad en nuestro prestigio.
-      <br />
-      <br />
-      Ya con tres generaciones de la empresa, donde ya los nietos de aquel señor frutero y abarrotero del rancho, se
-      dedican a trabajar esos mismos principios que se enseñaron, para mejorar siempre el bienestar de las familias.
-      Actualmente queremos llevar nuestros productos que hacemos aquí mismo en la empresa con la mayor
-      calidad posible, a todos los lugares donde sean bienvenidos, a cada rincón donde el cliente deguste de estos
-      artículos.
-      El comercio de detalle, de nuestros productos los manejamos en tiendas regionales, y actualmente trabajamos
-      con tiendas de autoservicio como Alsuper, y estamos en proceso de llegar al Oxxo. Nuestro mercado meta hoy
-      en día es ciudad Juárez, y eventualmente más allá. Ya que no contamos con instalaciones suficientes, tal cual
-      suficientes metros cuadrados de piso de venta, nuestra intención es tener socios comerciales y/o
-      distribuidores para así enfocarnos en lo que mejor sabemos hacer, productos de calidad.
-      </p>
+      
     </div>
   );
 };

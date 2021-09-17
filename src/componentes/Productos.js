@@ -10,6 +10,8 @@ import Button from 'react-bootstrap/Button'
 import CarouselProductos from './CarouselProductos'; 
 import useWindowDimensions from './funcionVentana';
 import ImagenFondo from './ImagenFondo.js';
+import Virgilio from '../assets/VIRGILIO.png'
+import Ronnie from '../assets/RONNIE.png'
 
 export default function Productos() {
 
@@ -141,10 +143,10 @@ export default function Productos() {
                 }}>
                   <Button  className="botonProductoVermas" >VER MÁS...</Button>
                 </Link>
-
               </div>
             )}
-          </CarouselProductos> 
+          </CarouselProductos>
+          
         <Body />
       </Container>
     )

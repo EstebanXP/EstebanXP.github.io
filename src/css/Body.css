@@ -8,4 +8,21 @@
 .textoBody{
     font-family: 'CircularStd-Book';
     text-align: justify;
+    
+}
+.ContainerBody{
+    max-width: 100vw !important;
+    margin: 0 !important;
+   
+}
+
+.virgilio, .ronnie{
+    max-width: 150px;
+    margin-top: 50%;
+    z-index: 0;
+}
+
+.mascotaName{
+    font-family: 'CircularStd-Book';
+    font-size: 1em;
 }
