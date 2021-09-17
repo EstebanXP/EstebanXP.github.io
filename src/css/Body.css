@@ -17,6 +17,7 @@
 }
 
 .virgilio, .ronnie{
+    width: 10vw;
     max-width: 150px;
     margin-top: 50%;
     z-index: 0;

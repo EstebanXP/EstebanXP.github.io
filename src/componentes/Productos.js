@@ -12,6 +12,7 @@ import useWindowDimensions from './funcionVentana';
 import ImagenFondo from './ImagenFondo.js';
 import Virgilio from '../assets/VIRGILIO.png'
 import Ronnie from '../assets/RONNIE.png'
+import BodyChico from './BodyChico';
 
 export default function Productos() {
 
@@ -147,7 +148,7 @@ export default function Productos() {
             )}
           </CarouselProductos>
           
-        <Body />
+        <BodyChico />
       </Container>
     )
   }
@@ -197,7 +198,7 @@ export default function Productos() {
               </div>
             )}
           </CarouselProductos> 
-        <Body />
+        <BodyChico />
       </Container>
     )
   }
