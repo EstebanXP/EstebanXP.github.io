@@ -62,22 +62,24 @@
     display: block;
     overflow: hidden;
     font-family: 'CircularStd-Book';
+    font-size: .7rem;
     
 }
 
 .tituloBody{
     font-family: 'CircularStd-Black';
-    font-size: 4em;
+    font-size: 3em;
     padding-top: 5vh;
 }
 
 .TituloProductosComp{
     font-family: 'CircularStd-Book';
     padding-top: 2vh;
+    font-size: 1rem;
 }
 
 .botonProductoVermas{
     font-family: 'CircularStd-Black';
-    font-size:.7em !important;
+    font-size:.5em !important;
 
 }
