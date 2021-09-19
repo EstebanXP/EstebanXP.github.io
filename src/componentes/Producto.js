@@ -20,6 +20,10 @@ function Producto() {
     return <ProductosNoDesc></ProductosNoDesc>
      ;
   }
+  else if(getSafe(() =>location.state.titulo)==undefined){
+    return <Error404></Error404>
+     ;
+  }
   else if (width < 500) {
     return <ProductosSmall></ProductosSmall>;
   } else if (Math.abs(width - height) < 400) {
