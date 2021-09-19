@@ -16,16 +16,8 @@ import Error404 from "./Error.js";
 function Producto() {
   const location = useLocation();
   const { height, width } = useWindowDimensions();
-  if(getSafe(() =>location.state.titulo)==undefined){
-    return <div>
-            <div className="algoBien">
-              <Link to="/productos">
-                <img src={left} className="left-arrowProducto" alt="" />
-              </Link>
-                <h1 className="top">Producto:</h1>
-            </div>
-            
-          </div>
+  if(getSafe(() =>location.state.dCompleta)==undefined){
+    return <ProductosNoDesc></ProductosNoDesc>
      ;
   }
   else if (width < 500) {
@@ -53,6 +45,51 @@ function checkBackground(test) {
   }
   return true;
 }
+
+function ProductosNoDesc() {
+  const location = useLocation();
+  const { height, width } = useWindowDimensions();
+  return (
+    <div className="productoTotalsi">
+      {checkBackground(location.state.fondoExtra) ? (
+        <img
+          className="backgroundImagenProd"
+          src={location.state.fondoExtra}
+          alt=""
+        ></img>
+      ) : (
+        <img
+          className="backgroundImagenProd"
+          src={location.state.imagen}
+          alt=""
+        ></img>
+      )}
+      <div className="Producto">
+        <div className="algoBien">
+          <Link to="/productos">
+            <img src={left} className="left-arrowProducto" alt="" />
+          </Link>
+          <h1 className="top">Producto:</h1>
+        </div>
+
+        <div
+          className="ColumnasProd">
+          <div className="columnaImagen" id="ContenedorTexto">
+            <img src={location.state.imagen} className="imagenNoDesc" alt=""></img>
+            <div className="divButtonProd">
+              <a href={location.state.pdfLink}><div className="squareButton"><p className="TextoBotonProd">DESCARGAR INFORMACIÓN</p></div></a>
+            </div>
+            
+          </div>
+          <div className="columnaDatos">
+            <h1 className="titulo">{location.state.titulo}</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 
 function ProductosBig() {
   const location = useLocation();

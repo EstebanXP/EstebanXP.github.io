@@ -38,6 +38,14 @@
   height: 70vh;
 }
 
+.imagenNoDesc{
+  border-radius: 25px;
+  padding: 5px;
+  max-width: 80vw;
+  height: 50vh;
+  object-fit: cover;
+}
+
 .descripcionCompleta {
   margin-left: 0px;
   margin-right: 15px;
@@ -173,10 +181,8 @@
 }
 
 .squareButton {
-  
-  height: 80px;
   width: 20vw;
-  min-width: 200px;
+  min-width: 180px;
   background-color:#E9971B;
   border-radius: 30px;
   margin: auto;
@@ -184,10 +190,8 @@
 }
 
 .squareButtonSmall {
-  
-  height: 60px;
   width: 20vw;
-  min-width: 200px;
+  min-width: 180px;
   background-color:#E9971B;
   border-radius: 20px;
   margin: auto;
@@ -206,7 +210,7 @@
   font-family: "Kiona-Regular";
   
   font-size:1em ;
-  
+  padding:.2em;
 }
 
 .TextoBotonProdSmall{
