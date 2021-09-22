@@ -47,7 +47,7 @@ li.active{
 
 .captionHome h3{
     font-family: 'CircularStd-Black';
-    font-size: 20vh !important;
+    font-size: 15vh !important;
     margin-bottom:  clamp(10px, 10em, 60px);;
     margin-right: 30px;
     text-align: left;
@@ -61,7 +61,7 @@ li.active{
 
 .captionProd h3{
     font-family: 'CircularStd-Black';
-    font-size: 15vh !important;
+    font-size: 10vh !important;
     text-align: left;
     display: block;
 }
