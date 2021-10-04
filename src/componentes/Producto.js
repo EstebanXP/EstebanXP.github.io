@@ -81,7 +81,7 @@ function ProductosNoDesc() {
           <div className="columnaImagen" id="ContenedorTexto">
             <img src={location.state.imagen} className="imagenNoDesc" alt=""></img>
             <div className="divButtonProd">
-              <a href={location.state.pdfLink}><div className="squareButton"><p className="TextoBotonProd">DESCARGAR INFORMACIÓN</p></div></a>
+              <a href={location.state.pdfLink}><div className="squareButton"><p className="TextoBotonProd">DESCARGAR INFORMACIÓN NUTRIMENTAL</p></div></a>
             </div>
             
           </div>
@@ -132,7 +132,7 @@ function ProductosBig() {
           <div className="columnaImagen" id="ContenedorTexto">
             <img src={location.state.imagen} className="imagen" alt=""></img>
             <div className="divButtonProd">
-              <a href={location.state.pdfLink}><div className="squareButton"><p className="TextoBotonProd">DESCARGAR INFORMACIÓN</p></div></a>
+              <a href={location.state.pdfLink}><div className="squareButton"><p className="TextoBotonProd">DESCARGAR INFORMACIÓN NUTRIMENTAL</p></div></a>
             </div>
             
           </div>
@@ -183,7 +183,7 @@ function ProductosSmall() {
               alt=""
             ></img>
             <div className="divButtonSmall">
-              <a href={location.state.pdfLink}><div className="squareButtonSmall"><p className="TextoBotonProdSmall">DESCARGAR INFORMACIÓN</p></div></a>
+              <a href={location.state.pdfLink}><div className="squareButtonSmall"><p className="TextoBotonProdSmall">DESCARGAR INFORMACIÓN NUTRIMENTAL</p></div></a>
             </div>
           </div>
           <div className="columnaDatos">
@@ -232,7 +232,7 @@ function ProductosSquare() {
               alt=""
             ></img>
             <div className="divButtonSquare">
-              <a href={location.state.pdfLink}><div className="squareButton"><p className="TextoBotonProd">DESCARGAR INFORMACIÓN</p></div></a>
+              <a href={location.state.pdfLink}><div className="squareButton"><p className="TextoBotonProd">DESCARGAR INFORMACIÓN NUTRIMENTAL</p></div></a>
             </div>
           </div>
           <div className="columnaDatos">
